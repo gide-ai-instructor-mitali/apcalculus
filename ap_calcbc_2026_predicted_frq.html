@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AP Calculus BC 2026 · Predicted FRQ</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script>MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre']},startup:{typeset:true}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<style>
+:root{--ink:#0a0a0a;--ink2:#1f1f1f;--ink3:#555;--ink4:#888;--bg:#f2f0eb;--page:#fff;--rule:#bbb;--rule2:#e0e0e0;--stripe:#f7f6f2;--calc:#002d72;--nocalc:#7b0000;--bc:#3d006e;--abbc:#005522;--green:#1B5E20;--gbg:#edfaed;--gold:#b87800;--goldbg:#fffde7;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);font-family:"Source Sans 3",sans-serif;font-size:14px;color:var(--ink);line-height:1.7}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;font-weight:600;line-height:1.2}
+p{margin-bottom:.4rem;color:var(--ink2)}ul,ol{padding-left:1.6rem;color:var(--ink2)}li{margin-bottom:3px}strong{font-weight:700;color:var(--ink)}
+.page{width:900px;margin:2rem auto;background:var(--page);box-shadow:0 4px 40px rgba(0,0,0,.18);border-top:5px solid var(--ink)}
+/* HEADER */
+.hdr-wrap{border-bottom:3px solid var(--ink)}
+.hdr-top{display:flex;align-items:stretch;min-height:82px}
+.hdr-ap{background:var(--ink);color:#fff;padding:.9rem 1.4rem;display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:105px;flex-shrink:0}
+.ap-big{font-family:"Source Serif 4",serif;font-size:44px;font-weight:700;line-height:1;letter-spacing:-1px}
+.ap-sub{font-size:9px;letter-spacing:2px;text-transform:uppercase;opacity:.5;margin-top:2px}
+.hdr-title{flex:1;padding:.9rem 1.4rem;display:flex;flex-direction:column;justify-content:center}
+.hdr-title h1{font-size:19px;font-weight:700;margin-bottom:3px}
+.hdr-title h2{font-size:12.5px;font-weight:400;color:var(--ink3)}
+.hdr-title .sub{font-size:11px;color:var(--ink4);margin-top:.2rem}
+.hdr-right{padding:.8rem 1.3rem;border-left:1px solid var(--rule2);display:flex;align-items:center}
+.hdr-meta{background:var(--ink);color:#aaa;padding:.38rem 1.4rem;display:flex;gap:1.8rem;font-size:10.5px;flex-wrap:wrap}
+.hdr-meta span::before{content:"· ";opacity:.35}.hdr-meta span:first-child::before{content:""}
+/* BANNERS */
+.pred-banner{background:#111;color:#777;text-align:center;padding:.42rem;font-size:10.5px}
+.pred-banner strong{color:#bbb;font-size:11.5px}
+.byline-bar{display:flex;align-items:center;justify-content:space-between;padding:.38rem 1.4rem;border-bottom:1px solid var(--rule2);background:#fafaf8;font-size:10px;color:var(--ink3)}
+.byline-bar em{font-style:normal;font-weight:700;color:var(--ink)}
+.legend{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;padding:.38rem 1.4rem;border-bottom:1px solid var(--rule2);background:#fafaf8;font-size:11px;color:var(--ink2)}
+.leg{display:inline-flex;align-items:center;gap:.3rem}
+.ldot{width:11px;height:11px;border:1.5px solid;flex-shrink:0;display:inline-block}
+.ldot.calc{background:var(--calc);border-color:var(--calc)}.ldot.nocalc{background:#fff;border-color:var(--nocalc)}.ldot.bc{background:var(--bc);border-color:var(--bc)}.ldot.abbc{background:var(--abbc);border-color:var(--abbc)}
+/* INSTRUCTIONS */
+.instructions{margin:1.3rem;padding:.9rem 1.15rem;border:1.5px solid var(--ink);background:#fff}
+.instructions h3{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--rule2);padding-bottom:.28rem;margin-bottom:.55rem}
+.instructions li{font-size:12.5px;line-height:1.85}
+.inote{background:var(--stripe);border:1px solid var(--rule);padding:.45rem .9rem;margin:.55rem 0 0;font-size:12px;line-height:1.6}
+/* SECTION */
+.sec-div{background:var(--ink);color:#fff;padding:.45rem 1.4rem;font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
+.sec-sub{padding:.45rem 1.4rem;font-size:12.5px;background:var(--stripe);border-bottom:1px solid var(--rule2);color:var(--ink2);line-height:1.6}
+/* QUESTION */
+.question{padding:1.5rem 1.4rem 1.1rem;border-bottom:2px solid var(--rule)}
+.q-hdr{display:flex;align-items:center;gap:.65rem;margin-bottom:.9rem;padding-bottom:.42rem;border-bottom:1px solid var(--rule2);flex-wrap:wrap}
+.q-num{font-family:"Source Serif 4",serif;font-size:27px;font-weight:700;line-height:1;min-width:27px}
+.badge{display:inline-block;font-size:9.5px;font-weight:700;letter-spacing:.9px;text-transform:uppercase;padding:2px 8px;border:1.5px solid}
+.badge.calc{background:var(--calc);color:#fff;border-color:var(--calc)}.badge.nocalc{background:#fff;color:var(--nocalc);border-color:var(--nocalc)}.badge.bc{background:var(--bc);color:#fff;border-color:var(--bc)}.badge.abbc{background:var(--abbc);color:#fff;border-color:var(--abbc)}
+.q-type{font-size:11px;color:var(--ink3);font-style:italic}
+.pts-box{margin-left:auto;border:1px solid var(--rule);padding:.18rem .7rem;text-align:center}
+.pts-box .n{display:block;font-size:21px;font-weight:700;font-family:"Source Serif 4",serif;line-height:1}.pts-box small{font-size:10px;color:var(--ink3)}
+/* CTX */
+.ctx{border:1px solid var(--rule);padding:.8rem 1.05rem;margin-bottom:.9rem;background:#fefefe;font-size:13px;line-height:1.8}
+.ctx-lbl{font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-bottom:.28rem}
+/* FIGURE */
+.fig{margin:.8rem 0;border:1px solid var(--rule);background:#fff;padding:.6rem}
+.fig-title{font-size:11px;font-weight:700;text-align:center;margin-bottom:.32rem}
+.fig-cap{font-size:10px;text-align:center;color:var(--ink4);margin-top:.28rem;font-style:italic}
+.two-fig{display:flex;gap:.7rem;margin:.8rem 0}.two-fig .fig{flex:1}
+/* TABLE */
+.dtbl{width:100%;border-collapse:collapse;font-size:12.5px;margin:.2rem 0}
+.dtbl th{background:var(--ink);color:#fff;padding:5px 10px;text-align:center;border:1px solid var(--ink);font-size:11px}
+.dtbl td{padding:5px 10px;border:1px solid var(--rule);text-align:center}
+.dtbl tr:nth-child(even) td{background:var(--stripe)}
+.dtbl .rh{text-align:left;font-weight:600;background:#eeede9;border-left:3px solid var(--ink)}
+/* PARTS */
+.part{margin-bottom:.8rem;padding-left:1rem;font-size:13.5px;line-height:1.75;color:var(--ink2)}
+.plbl{font-weight:700;font-size:15px;display:inline;margin-right:.28rem;color:var(--ink)}
+.ppts{font-size:10px;color:var(--ink4);font-style:italic}
+.tv{font-style:italic;font-weight:700;color:var(--ink)}
+/* REVEAL */
+.rbtn{display:block;width:100%;margin:1rem 0 .32rem;padding:.52rem 1rem;background:#fff;border:1.5px solid var(--ink);color:var(--ink);font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;cursor:pointer;font-family:"Source Sans 3",sans-serif;text-align:center;transition:all .15s}
+.rbtn:hover{background:var(--ink);color:#fff}
+.rbtn.done{background:var(--ink);color:#fff;pointer-events:none}
+/* ANSWER */
+.ans{display:none;border:1.5px solid var(--ink);border-top:3px solid var(--green);margin:.18rem 0 .6rem;background:#fafaf8}
+.ans.open{display:block}
+.ans-hdr{background:var(--green);color:#fff;padding:.42rem 1.05rem;font-size:9.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;display:flex;align-items:center}
+.ans-hdr .tot{margin-left:auto;font-size:9.5px;background:rgba(255,255,255,.15);padding:2px 8px}
+.ap{padding:.8rem 1.05rem;border-bottom:1px solid var(--rule2)}
+.ap:last-child{border-bottom:none}
+.aplbl{font-size:9.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink4);margin-bottom:.28rem;display:flex;align-items:center;gap:.45rem}
+.pb{background:var(--green);color:#fff;font-size:8.5px;padding:1px 6px;border-radius:2px;font-weight:700}
+.ab{font-size:13px;line-height:1.8;color:var(--ink2)}.ab strong{color:var(--ink)}
+.amath{background:#f3f4f8;border-left:3px solid var(--green);padding:.32rem .75rem;margin:.28rem 0;line-height:2.1;font-size:13.5px;overflow-x:auto}
+.tip{margin-top:.55rem;padding:.42rem .85rem;background:var(--goldbg);border-left:3px solid var(--gold);font-size:11.5px;color:#444;line-height:1.6}
+.tip::before{content:"Scoring key — ";font-weight:700;color:var(--gold)}
+/* SELF-SCORER */
+.stog{font-size:10px;color:var(--ink4);font-style:italic;cursor:pointer;display:inline-block;margin-top:.42rem}
+.stog:hover{color:var(--ink);text-decoration:underline}
+.spanel{display:none;border:1px solid var(--rule);margin:.32rem 0;background:#fff}
+.spanel.open{display:block}
+.shdr{background:var(--ink);color:#fff;padding:.28rem .9rem;font-size:9.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase}
+.swrap{padding:.5rem .9rem}
+.sinput{width:100%;min-height:65px;border:1px solid var(--rule);padding:.38rem;font-family:"Source Sans 3",sans-serif;font-size:13px;resize:vertical;line-height:1.6}
+.sbtn{margin-top:.32rem;padding:.33rem .9rem;background:var(--green);color:#fff;border:none;cursor:pointer;font-size:10.5px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;font-family:"Source Sans 3",sans-serif}
+.sres{margin-top:.5rem;padding:.48rem .8rem;border:1px solid var(--rule);background:var(--stripe);font-size:11.5px;display:none}
+.kh{color:var(--green);font-weight:700;font-size:10px;display:inline-block;margin:2px 3px;padding:1px 6px;border:1px solid var(--green);background:var(--gbg)}
+.km{color:var(--ink4);font-size:10px;display:inline-block;margin:2px 3px;padding:1px 6px;border:1px solid var(--rule2);background:#f5f5f5;text-decoration:line-through;opacity:.55}
+.sbar{height:8px;background:#eee;border:1px solid var(--rule);margin:.42rem 0}
+.sfill{height:100%;background:var(--green);transition:width .4s}
+.snum{font-size:21px;font-weight:700;font-family:"Source Serif 4",serif}
+.sfb{font-size:11.5px;padding:.32rem .5rem;border-left:3px solid var(--ink);margin-top:.28rem;background:#fafaf8}
+/* TOTAL */
+.total-bar{margin:1.3rem;padding:1.1rem 1.4rem;border:2px solid var(--ink);background:#fff;display:flex;align-items:center;gap:1.8rem}
+.tb-num{font-family:"Source Serif 4",serif;font-size:50px;font-weight:700;line-height:1}
+.tb-det{flex:1}.tb-prog{height:9px;background:#eee;border:1px solid var(--rule);margin:.28rem 0}.tb-fill{height:100%;background:var(--ink);transition:width .5s}
+.exam-footer{background:var(--ink);color:#888;font-size:10px;text-align:center;padding:.52rem}
+.page-cont{text-align:right;font-size:9.5px;color:var(--ink4);padding:.22rem 1.4rem;font-style:italic;border-top:1px solid var(--rule2)}
+svg text{font-family:"Source Sans 3",Arial,sans-serif}
+</style>
+</head>
+<body>
+<div class="page">
+<div class="pred-banner"><strong>PREDICTED EXAMINATION — NOT AN OFFICIAL COLLEGE BOARD DOCUMENT</strong><br>Constructed from 2020–2025 released FRQs, the AP Calculus BC CED, and Chief Reader scoring commentary · Educational preparation only</div>
+<div class="hdr-wrap">
+  <div class="hdr-top">
+    <div class="hdr-ap"><span class="ap-big">AP</span><span class="ap-sub">College Board</span></div>
+    <div class="hdr-title">
+      <h1>AP® Calculus BC Examination — 2026 (Predicted)</h1>
+      <h2>Section II · Free-Response Questions · 1 Hour 30 Minutes</h2>
+      <div class="sub">6 Questions · 54 Points · 50% of examination score · FRQ handwritten in paper booklet</div>
+    </div>
+    <div class="hdr-right">
+      <svg width="112" height="50" viewBox="0 0 112 50"><rect width="112" height="50" fill="#0a0a0a" rx="2"/><text x="8" y="34" font-family="Source Serif 4,serif" font-size="28" fill="#fff" font-weight="700">∫</text><text x="28" y="20" font-family="Source Sans 3,Arial,sans-serif" font-size="10" fill="#b090f0" font-weight="700">BC · 2026</text><text x="28" y="32" font-family="Source Serif 4,serif" font-size="11" fill="#ddd">Predicted</text><text x="28" y="44" font-family="Source Sans 3,Arial,sans-serif" font-size="7" fill="#7050c0" letter-spacing="1">FREE RESPONSE · SECTION II</text></svg>
+    </div>
+  </div>
+  <div class="hdr-meta">
+    <span>Monday 11 May 2026 · 8:00 AM local time</span>
+    <span>Part A (Q1–2): graphing calculator required · 30 min</span>
+    <span>Part B (Q3–6): no calculator · 60 min</span>
+    <span>No formula sheet · Exact answers unless specified</span>
+  </div>
+</div>
+<div class="byline-bar">
+  <div>Predicted exam · 2026 cycle · Not affiliated with College Board · For educational use only</div>
+  <div>MathJax LaTeX rendering · Click <em>▶ Reveal Answer</em> after attempting each question</div>
+</div>
+<div class="legend">
+  <strong style="font-size:11px;margin-right:.2rem">Labels:</strong>
+  <div class="leg"><span class="ldot calc"></span> Calculator Active (Part A)</div>
+  <div class="leg"><span class="ldot nocalc"></span> No Calculator (Part B)</div>
+  <div class="leg"><span class="ldot bc"></span> BC-Only Content</div>
+  <div class="leg"><span class="ldot abbc"></span> AB + BC Shared</div>
+  <div style="margin-left:auto;font-size:10px;color:var(--ink3)">Task verbs in <em>italic bold</em> · Attempt before revealing answers</div>
+</div>
+<div class="instructions">
+  <h3>Section II — General Instructions</h3>
+  <ul>
+    <li><strong>Show all work.</strong> Unsupported answers earn no credit. Partial credit is awarded for correct procedure even when a final answer is incorrect.</li>
+    <li><strong>Part A (Q1–2):</strong> Graphing calculator required. Show the mathematical setup for all calculator results. Decimals must be accurate to <strong>three decimal places</strong>.</li>
+    <li><strong>Part B (Q3–6):</strong> No calculator. You may return to Part A but may not use a calculator. Leave all answers in <strong>exact form</strong> unless otherwise specified.</li>
+    <li>Unless stated otherwise, all angles are in radians and \(\ln\) denotes the natural logarithm.</li>
+  </ul>
+  <div class="inote"><strong>Scoring:</strong> Each of the 6 questions is worth <strong>9 points</strong>. Part A: long questions (~15 min each). Part B: short questions (~15 min each). <strong>Do not begin Part B until directed by the proctor.</strong></div>
+</div>
+
+<!-- ═══════════ PART A ═══════════ -->
+<div class="sec-div">Section II · Part A — Graphing Calculator Required</div>
+<div class="sec-sub"><strong>Questions 1–2 · 30 minutes.</strong> Show the mathematical setup for all results obtained by calculator. Decimal approximations must be correct to three places after the decimal point. Do not begin Part B until signaled.</div>
+
+<!-- ══════ Q1 ══════ -->
+<div class="question" id="q1">
+  <div class="q-hdr">
+    <span class="q-num">1</span>
+    <span class="badge calc">Calculator</span>
+    <span class="badge abbc">AB + BC</span>
+    <span class="q-type">Rate of Change · Accumulation Functions · Mean Value Theorem</span>
+    <div class="pts-box"><span class="n">9</span><small>pts</small></div>
+  </div>
+  <div class="ctx">
+    <div class="ctx-lbl">Context</div>
+    A water management facility monitors a reservoir. The rate at which water flows into the reservoir is modeled by the differentiable function \(E(t)\), and the rate at which water is released downstream is modeled by the differentiable function \(D(t)\). Both are measured in <strong>thousand cubic feet per hour</strong> for \(0 \le t \le 12\). At \(t = 0\), the reservoir contains <strong>150 thousand cubic feet</strong>. Selected values are given in Table 1. For parts (c) and (d), use the analytic models \(E(t) = 5 + 3\sin\!\left(\dfrac{\pi t}{6}\right)\) and \(D(t) = 2 + \dfrac{t}{2}\).
+  </div>
+  <div class="fig">
+    <div class="fig-title">Table 1 — Selected values of \(E(t)\) and \(D(t)\)</div>
+    <table class="dtbl">
+      <thead><tr><th>\(t\) (hr)</th><th>0</th><th>3</th><th>6</th><th>9</th><th>12</th></tr></thead>
+      <tbody>
+        <tr><td class="rh">\(E(t)\) (thou. ft³/hr)</td><td>5</td><td>8</td><td>5</td><td>2</td><td>5</td></tr>
+        <tr><td class="rh">\(D(t)\) (thou. ft³/hr)</td><td>2</td><td>3.5</td><td>5</td><td>6.5</td><td>8</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="fig">
+    <div class="fig-title">Figure 1 — \(y=E(t)\) (solid) and \(y=D(t)\) (dashed) on \([0,12]\)</div>
+    <!-- x:t=0→px=55, t=12→px=530; scale=39.58/hr; py=175-val*17 (val=0→175,val=9→22) -->
+    <svg viewBox="0 0 548 195" style="width:100%;display:block">
+      <rect width="548" height="195" fill="#f9f9f7"/>
+      <line x1="55" y1="175" x2="532" y2="175" stroke="#111" stroke-width="2"/>
+      <line x1="55" y1="20" x2="55" y2="177" stroke="#111" stroke-width="2"/>
+      <polygon points="532,175 528,173 528,177" fill="#111"/>
+      <polygon points="55,20 53,24 57,24" fill="#111"/>
+      <!-- grid -->
+      <line x1="55" y1="140" x2="532" y2="140" stroke="#eee" stroke-width="1"/>
+      <line x1="55" y1="105" x2="532" y2="105" stroke="#eee" stroke-width="1"/>
+      <line x1="55" y1="72" x2="532" y2="72" stroke="#eee" stroke-width="1"/>
+      <line x1="55" y1="39" x2="532" y2="39" stroke="#eee" stroke-width="1"/>
+      <line x1="174" y1="20" x2="174" y2="177" stroke="#eee" stroke-width="1"/>
+      <line x1="293" y1="20" x2="293" y2="177" stroke="#eee" stroke-width="1"/>
+      <line x1="412" y1="20" x2="412" y2="177" stroke="#eee" stroke-width="1"/>
+      <line x1="532" y1="20" x2="532" y2="177" stroke="#eee" stroke-width="1"/>
+      <!-- E(t)=5+3sin(πt/6): px=55+t*39.58; py=175-E*17
+           t=0:E=5→py=90; t=1:6.5→65; t=2:7.598→46; t=3:8→39; t=4:7.598→46; t=5:6.5→65;
+           t=6:5→90; t=7:3.5→116; t=8:2.402→134; t=9:2→141; t=10:2.402→134; t=11:3.5→116; t=12:5→90 -->
+      <polyline points="55,90 95,65 135,46 174,39 214,46 254,65 293,90 333,116 372,134 412,141 451,134 491,116 532,90"
+        fill="none" stroke="#002d72" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- D(t)=2+t/2: t=0:D=2→py=141; t=12:D=8→py=39 -->
+      <line x1="55" y1="141" x2="532" y2="39" stroke="#8b0000" stroke-width="2" stroke-dasharray="8,4"/>
+      <!-- Labels -->
+      <text x="138" y="34" font-size="11" fill="#002d72" font-weight="bold">E(t)</text>
+      <text x="498" y="49" font-size="11" fill="#8b0000" font-weight="bold">D(t)</text>
+      <!-- Axis ticks -->
+      <text x="55"  y="186" text-anchor="middle" font-size="10" fill="#555">0</text>
+      <text x="174" y="186" text-anchor="middle" font-size="10" fill="#555">3</text>
+      <text x="293" y="186" text-anchor="middle" font-size="10" fill="#555">6</text>
+      <text x="412" y="186" text-anchor="middle" font-size="10" fill="#555">9</text>
+      <text x="532" y="186" text-anchor="middle" font-size="10" fill="#555">12</text>
+      <text x="292" y="194" text-anchor="middle" font-size="10" fill="#333" font-weight="bold">t (hours)</text>
+      <text x="46" y="143" text-anchor="end" font-size="10" fill="#555">2</text>
+      <text x="46" y="92"  text-anchor="end" font-size="10" fill="#555">5</text>
+      <text x="46" y="42"  text-anchor="end" font-size="10" fill="#555">8</text>
+      <text x="18" y="98" text-anchor="middle" font-size="10" fill="#333" font-weight="bold" transform="rotate(-90 18 98)">thou. ft³/hr</text>
+    </svg>
+    <div class="fig-cap">The analytic models are consistent with Table 1. Both curves cross at \(t=6\).</div>
+  </div>
+  <div class="part"><span class="plbl">(a)</span> <span class="ppts">[2 pts]</span><br>
+    Using Table 1, <span class="tv">find</span> the <strong>left Riemann sum</strong> with four equal subintervals approximating \(\displaystyle\int_0^{12}D(t)\,dt\). <span class="tv">Interpret</span> the meaning of this approximation in context, including units.
+  </div>
+  <div class="part"><span class="plbl">(b)</span> <span class="ppts">[1 pt]</span><br>
+    Must there exist a time \(t\in(3,9)\) at which \(E'(t)=-1\)? <span class="tv">Justify</span> your answer, citing the applicable theorem by name and showing all necessary computations from Table 1.
+  </div>
+  <div class="part"><span class="plbl">(c)</span> <span class="ppts">[3 pts]</span><br>
+    Let \(W(t)=150+\displaystyle\int_0^t\!\bigl[E(s)-D(s)\bigr]\,ds\) denote the volume of water (in thousand cubic feet) in the reservoir at time \(t\). Using the analytic models for \(E\) and \(D\):
+    <ul style="margin-top:.3rem">
+      <li><span class="tv">Find</span> \(W'(6)\) and <span class="tv">interpret</span> its meaning in context.</li>
+      <li><span class="tv">Determine</span>, with justification, whether \(W\) is increasing or decreasing at \(t=4\).</li>
+    </ul>
+  </div>
+  <div class="part"><span class="plbl">(d)</span> <span class="ppts">[3 pts]</span><br>
+    Using the analytic models, <span class="tv">find</span> the value \(t^*\in(0,12)\) at which \(W(t)\) attains its global maximum on \([0,12]\). <span class="tv">Justify</span> that \(t^*\) is a global maximum via a sign analysis of \(W'\). <span class="tv">Find</span> the exact maximum volume, simplifying your answer.
+  </div>
+  <button class="rbtn" id="r1-btn" onclick="reveal(1)">▶ Reveal Answer &amp; Scoring Guideline — Question 1</button>
+  <div class="ans" id="a1">
+    <div class="ans-hdr">Question 1 — Model Answer &amp; Scoring Guideline <span class="tot">9 points</span></div>
+    <div class="ap">
+      <div class="aplbl">Part (a) — Left Riemann Sum <span class="pb">2 pts</span></div>
+      <div class="ab">Four equal subintervals \([0,3],[3,6],[6,9],[9,12]\); \(\Delta t=3\); left endpoints \(t=0,3,6,9\).
+        <div class="amath">\[\int_0^{12}\!D(t)\,dt\approx 3\bigl[D(0)+D(3)+D(6)+D(9)\bigr]=3(2+3.5+5+6.5)=3(17)=\mathbf{51}\text{ thousand cubic feet.}\]</div>
+        <strong>Interpretation:</strong> Approximately 51,000 cubic feet of water are released downstream over the 12-hour period.
+      </div>
+      <div class="tip">P1: correct left-Riemann setup (four left-endpoint values × Δt=3). P2: answer 51 with units "thousand cubic feet" (or equivalent). Units required for P2. Right-endpoint sum (answer 69) earns 0.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (b) — Mean Value Theorem <span class="pb">1 pt</span></div>
+      <div class="ab"><strong>Yes.</strong> Since \(E\) is differentiable on \([3,9]\), the <strong>Mean Value Theorem</strong> guarantees at least one \(t\in(3,9)\) such that
+        <div class="amath">\[E'(t)=\frac{E(9)-E(3)}{9-3}=\frac{2-8}{6}=\frac{-6}{6}=-1.\]</div>
+      </div>
+      <div class="tip">P1 requires: (1) naming "Mean Value Theorem" or "MVT," (2) computing the difference quotient −6/6 = −1 from table values. Citing IVT earns 0. Asserting the conclusion without the calculation earns 0.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (c) — Analysis of W <span class="pb">3 pts</span></div>
+      <div class="ab">By the <strong>Fundamental Theorem of Calculus</strong>, \(W'(t)=E(t)-D(t)=3+3\sin\!\tfrac{\pi t}{6}-\tfrac{t}{2}\).
+        <div class="amath">\[W'(6)=E(6)-D(6)=\bigl(5+3\sin\pi\bigr)-5=5-5=\mathbf{0}\text{ thousand ft}^3\!/\text{hr.}\]</div>
+        <strong>Interpretation:</strong> At \(t=6\) hours, the reservoir volume is neither increasing nor decreasing — the inflow and outflow rates are exactly equal.<br><br>
+        <strong>At \(t=4\):</strong>
+        <div class="amath">\[W'(4)=5+3\sin\!\tfrac{2\pi}{3}-2=5+3\cdot\frac{\sqrt{3}}{2}-2=3+\frac{3\sqrt{3}}{2}>0.\]</div>
+        Since \(W'(4)>0\), \(W\) is <strong>increasing</strong> at \(t=4\).
+      </div>
+      <div class="tip">P1: W′(6) = 0 via FTC (must state W′ = E − D or cite FTC). P2: correct contextual interpretation (rate = 0, inflow equals outflow). P3: W′(4) = 3 + 3√3/2 > 0 → increasing, with supporting exact computation. Decimal ≈ 5.598 > 0 is also accepted.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (d) — Global Maximum of W <span class="pb">3 pts</span></div>
+      <div class="ab"><strong>Critical point:</strong> \(W'(t)=3+3\sin\!\tfrac{\pi t}{6}-\tfrac{t}{2}=0\). At \(t=6\): \(3+3(0)-3=0\,\checkmark\). So \(t^*=6\).
+        <br><br><strong>Sign analysis:</strong> At \(t=3\): \(W'(3)=3+3-1.5=4.5>0\) (increasing). At \(t=9\): \(W'(9)=3-3-4.5=-4.5<0\) (decreasing). Since \(W'\) changes from \(+\) to \(-\) at \(t=6\), this is a <strong>global maximum</strong>.
+        <br><br><strong>Exact maximum value:</strong>
+        <div class="amath">\[W(6)=150+\int_0^6\!\!\left(3+3\sin\frac{\pi s}{6}-\frac{s}{2}\right)\!ds=150+\left[3s-\frac{18}{\pi}\cos\frac{\pi s}{6}-\frac{s^2}{4}\right]_0^6\]</div>
+        <div class="amath">\[=150+\!\left[\!\left(18-\frac{18}{\pi}\cos\pi-9\right)\!-\!\left(0-\frac{18}{\pi}\cdot1-0\right)\!\right]=150+\left[9+\frac{18}{\pi}+\frac{18}{\pi}\right]=\boxed{159+\frac{36}{\pi}}\approx170.459\text{ thou. ft}^3.\]</div>
+      </div>
+      <div class="tip">P1: t* = 6 identified as a critical point (W′ = 0). P2: sign change W′ > 0 before, W′ < 0 after — must show two test values. P3: correct antiderivative and exact answer 159 + 36/π. Must show the antiderivative evaluation step explicitly.</div>
+    </div>
+  </div>
+  <span class="stog" onclick="toggleS('s1')">▸ Practice self-scoring — Q1</span>
+  <div class="spanel" id="s1"><div class="shdr">Self-Scoring — Q1</div><div class="swrap"><textarea class="sinput" id="si1" placeholder="Write your Q1 answer here, then click Score..."></textarea><button class="sbtn" onclick="scoreIt('si1','sr1',['riemann','left','51','thousand','mean value theorem','MVT','differentiable','-1','fundamental theorem','FTC','W prime','0','increasing','sin','antiderivative','36/pi','159','170'])">Score My Answer</button><div class="sres" id="sr1"></div></div></div>
+</div><!-- /q1 -->
+
+<div class="page-cont">Continue → Question 2</div>
+
+<!-- ══════ Q2 ══════ -->
+<div class="question" id="q2">
+  <div class="q-hdr">
+    <span class="q-num">2</span>
+    <span class="badge calc">Calculator</span>
+    <span class="badge bc">BC Only</span>
+    <span class="q-type">Parametric Equations · Velocity Vector · Arc Length</span>
+    <div class="pts-box"><span class="n">9</span><small>pts</small></div>
+  </div>
+  <div class="ctx">
+    <div class="ctx-lbl">Problem Statement</div>
+    A particle moves in the \(xy\)-plane with position at time \(t\) given by
+    \[x(t)=t^3-3t,\qquad y(t)=t^2-1,\qquad t\in[-2,\,2].\]
+    The path traced by the particle is shown in Figure 2.
+  </div>
+  <div class="fig">
+    <div class="fig-title">Figure 2 — Path of the particle for \(t\in[-2,\,2]\)</div>
+    <!-- Mapping: px=50+(x+2.5)*76; py=275−(y+1.5)*46
+         x=-2.5→50; x=-2→88; x=-1→164; x=0→240; x=1→316; x=2→392; x=3→468
+         y=-1.5→275; y=-1→252; y=0→206; y=1→160; y=2→114; y=3→68 -->
+    <svg viewBox="0 0 500 285" style="width:100%;display:block">
+      <rect width="500" height="285" fill="#f9f9f7"/>
+      <!-- grid -->
+      <line x1="48"  y1="68"  x2="476" y2="68"  stroke="#eee" stroke-width="1"/>
+      <line x1="48"  y1="114" x2="476" y2="114" stroke="#eee" stroke-width="1"/>
+      <line x1="48"  y1="160" x2="476" y2="160" stroke="#eee" stroke-width="1"/>
+      <line x1="48"  y1="206" x2="476" y2="206" stroke="#eee" stroke-width="1"/>
+      <line x1="48"  y1="252" x2="476" y2="252" stroke="#eee" stroke-width="1"/>
+      <line x1="88"  y1="55"  x2="88"  y2="278" stroke="#eee" stroke-width="1"/>
+      <line x1="164" y1="55"  x2="164" y2="278" stroke="#eee" stroke-width="1"/>
+      <line x1="240" y1="55"  x2="240" y2="278" stroke="#eee" stroke-width="1"/>
+      <line x1="316" y1="55"  x2="316" y2="278" stroke="#eee" stroke-width="1"/>
+      <line x1="392" y1="55"  x2="392" y2="278" stroke="#eee" stroke-width="1"/>
+      <line x1="468" y1="55"  x2="468" y2="278" stroke="#eee" stroke-width="1"/>
+      <!-- axes: x=0→px=240; y=0→py=206 -->
+      <line x1="46"  y1="206" x2="478" y2="206" stroke="#111" stroke-width="2"/>
+      <line x1="240" y1="56"  x2="240" y2="278" stroke="#111" stroke-width="2"/>
+      <polygon points="478,206 474,204 474,208" fill="#111"/>
+      <polygon points="240,56 238,60 242,60" fill="#111"/>
+      <!-- axis labels -->
+      <text x="485" y="209" font-size="11" fill="#333" font-weight="bold">x</text>
+      <text x="245" y="53" font-size="11" fill="#333" font-weight="bold">y</text>
+      <!-- x-axis ticks -->
+      <text x="88"  y="218" text-anchor="middle" font-size="10" fill="#555">−2</text>
+      <text x="164" y="218" text-anchor="middle" font-size="10" fill="#555">−1</text>
+      <text x="316" y="218" text-anchor="middle" font-size="10" fill="#555">1</text>
+      <text x="392" y="218" text-anchor="middle" font-size="10" fill="#555">2</text>
+      <text x="468" y="218" text-anchor="middle" font-size="10" fill="#555">3</text>
+      <!-- y-axis ticks -->
+      <text x="230" y="255" text-anchor="end" font-size="10" fill="#555">−1</text>
+      <text x="230" y="163" text-anchor="end" font-size="10" fill="#555">1</text>
+      <text x="230" y="117" text-anchor="end" font-size="10" fill="#555">2</text>
+      <text x="230" y="71"  text-anchor="end" font-size="10" fill="#555">3</text>
+      <!-- Curve points:
+           t=−2:  x=−2,y=3 → (88,68)
+           t=−1.8: x=−0.432,y=2.24 → (206,?): px=50+(−0.432+2.5)*76=50+157.2=207; py=275−(2.24+1.5)*46=275−172=103
+           t=−1.6: x=0.704,y=1.56 → px=50+(3.204)*76=294; py=275−(3.06)*46=275−140.8=134
+           t=−1.4: x=1.456,y=0.96 → px=50+3.956*76=351; py=275−2.46*46=275−113=162
+           t=−1.2: x=1.872,y=0.44 → px=50+4.372*76=382; py=275−1.94*46=275−89=186
+           t=−1:  x=2,y=0 → (392,206)
+           t=−0.8: x=1.888,y=−0.36 → px=381; py=275−1.14*46=275−52=223
+           t=−0.6: x=1.584,y=−0.64 → px=370; py=275−0.86*46=275−40=235
+           t=−0.4: x=1.136,y=−0.84 → px=336; py=275−0.66*46=275−30=245
+           t=−0.2: x=0.592,y=−0.96 → px=295; py=275−0.54*46=250
+           t=0:   x=0,y=−1 → (240,252)
+           t=0.2: x=−0.592,y=−0.96 → (205,250)
+           t=0.4: x=−1.136,y=−0.84 → (163,245)
+           t=0.6: x=−1.584,y=−0.64 → (129,235)
+           t=0.8: x=−1.888,y=−0.36 → (107,223)
+           t=1:   x=−2,y=0 → (88,206)
+           t=1.2: x=−1.872,y=0.44 → (98,186)
+           t=1.4: x=−1.456,y=0.96 → (128,162)
+           t=1.6: x=−0.704,y=1.56 → (187,134)
+           t=1.8: x=0.432,y=2.24 → (283,103)
+           t=2:   x=2,y=3 → (392,68)
+      -->
+      <polyline
+        points="88,68 207,103 294,134 351,162 382,186 392,206 381,223 370,235 336,245 295,250 240,252 205,250 163,245 129,235 107,223 88,206 98,186 128,162 187,134 283,103 392,68"
+        fill="none" stroke="#002d72" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- Direction arrows -->
+      <polygon points="366,154 353,148 352,161" fill="#002d72" opacity=".8"/>
+      <polygon points="112,217 103,207 109,200" fill="#002d72" opacity=".8"/>
+      <!-- t=0 start -->
+      <circle cx="240" cy="252" r="5" fill="#002d72"/>
+      <text x="250" y="261" font-size="10" fill="#002d72">t = 0, (0, −1)</text>
+      <!-- t=±2 endpoints -->
+      <circle cx="88"  cy="68"  r="4.5" fill="#555"/>
+      <text x="96"  y="65"  font-size="9.5" fill="#555">t = −2</text>
+      <circle cx="392" cy="68"  r="4.5" fill="#555"/>
+      <text x="400" y="65"  font-size="9.5" fill="#555">t = 2</text>
+      <!-- vertical tangents at t=±1 → (−2,0) and (2,0) — open circles -->
+      <circle cx="88"  cy="206" r="4.5" fill="#fff" stroke="#002d72" stroke-width="1.8"/>
+      <circle cx="392" cy="206" r="4.5" fill="#fff" stroke="#002d72" stroke-width="1.8"/>
+      <!-- self-intersection at (0,2): px=240, py=114 — small open red circle -->
+      <circle cx="240" cy="114" r="5" fill="#fff" stroke="#8b0000" stroke-width="2"/>
+      <text x="250" y="111" font-size="9.5" fill="#8b0000">self-intersection</text>
+    </svg>
+    <div class="fig-cap">Arrows indicate direction of increasing \(t\). Open blue circles: vertical tangent points. Open red circle: self-intersection point.</div>
+  </div>
+  <div class="part"><span class="plbl">(a)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Find</span> the velocity vector \(\mathbf{v}(t)=\langle x'(t),y'(t)\rangle\) and the speed \(|\mathbf{v}(t)|\) at \(t=2\). <span class="tv">Write</span> an equation for the line tangent to the curve at \(t=2\).
+  </div>
+  <div class="part"><span class="plbl">(b)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Find</span> all values of \(t\in(-2,2)\) at which the curve has a <strong>horizontal tangent</strong> and all values at which it has a <strong>vertical tangent</strong>. <span class="tv">Identify</span> the corresponding point \((x,y)\) for each and <span class="tv">justify</span> each classification.
+  </div>
+  <div class="part"><span class="plbl">(c)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Show</span> algebraically that the curve has a self-intersection. <span class="tv">Find</span> the coordinates of the intersection point and <span class="tv">determine</span> the two values of \(t\) at which the particle is at that point.
+  </div>
+  <div class="part"><span class="plbl">(d)</span> <span class="ppts">[1 pt]</span><br>
+    <span class="tv">Find</span> all values of \(t\in(-2,2)\) at which the particle is simultaneously moving to the <strong>left</strong> and <strong>downward</strong>. <span class="tv">Justify</span> your answer.
+  </div>
+  <div class="part"><span class="plbl">(e)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Set up</span> a definite integral giving the total distance traveled from \(t=0\) to \(t=2\). <span class="tv">Use</span> a graphing calculator to evaluate it, correct to three decimal places.
+  </div>
+  <button class="rbtn" id="r2-btn" onclick="reveal(2)">▶ Reveal Answer &amp; Scoring Guideline — Question 2</button>
+  <div class="ans" id="a2">
+    <div class="ans-hdr">Question 2 — Model Answer &amp; Scoring Guideline <span class="tot">9 points</span></div>
+    <div class="ap">
+      <div class="aplbl">Part (a) — Velocity, Speed, Tangent Line <span class="pb">2 pts</span></div>
+      <div class="ab">\(x'(t)=3t^2-3,\quad y'(t)=2t\). At \(t=2\): \(x'(2)=9,\ y'(2)=4\).
+        <div class="amath">\[\mathbf{v}(2)=\langle9,4\rangle,\qquad|\mathbf{v}(2)|=\sqrt{81+16}=\sqrt{97}\approx9.849.\]</div>
+        Position at \(t=2\): \(x(2)=2,\ y(2)=3\). Slope: \(\dfrac{dy}{dx}\big|_{t=2}=\dfrac{y'(2)}{x'(2)}=\dfrac{4}{9}\).
+        <div class="amath">\[\text{Tangent line: }\;y-3=\tfrac{4}{9}(x-2),\quad\text{i.e.,}\quad y=\tfrac{4}{9}x+\tfrac{19}{9}.\]</div>
+      </div>
+      <div class="tip">P1: velocity ⟨9,4⟩ and speed √97 ≈ 9.849 (both needed). P2: tangent line through (2,3) with slope dy/dx = y′/x′ = 4/9. Must show the quotient form.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (b) — Horizontal and Vertical Tangents <span class="pb">2 pts</span></div>
+      <div class="ab"><strong>Horizontal</strong> (\(y'=0,\ x'\ne0\)): \(2t=0\Rightarrow t=0\). Check: \(x'(0)=-3\ne0\,\checkmark\). Point: \((0,-1)\).
+        <br><br><strong>Vertical</strong> (\(x'=0,\ y'\ne0\)): \(3t^2-3=0\Rightarrow t=\pm1\). Check: \(y'(\pm1)=\pm2\ne0\,\checkmark\).<br>
+        At \(t=1\): \((x,y)=(-2,0)\). At \(t=-1\): \((x,y)=(2,0)\).
+      </div>
+      <div class="tip">P1: horizontal tangent at (0,−1), with y′=0 and x′≠0 verified. P2: both vertical tangents at (−2,0) and (2,0), with x′=0 and y′≠0 verified at t=±1. Missing one vertical tangent loses P2.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (c) — Self-Intersection <span class="pb">2 pts</span></div>
+      <div class="ab">Require distinct \(t_1\ne t_2\) with \(x(t_1)=x(t_2)\) and \(y(t_1)=y(t_2)\).<br>
+        From equal \(y\)-values: \(t_1^2-1=t_2^2-1\Rightarrow t_1^2=t_2^2\Rightarrow t_2=-t_1\).<br>
+        Substituting into equal \(x\)-values:
+        <div class="amath">\[t_1^3-3t_1=(-t_1)^3-3(-t_1)=-t_1^3+3t_1\implies 2t_1^3=6t_1\implies t_1^2=3\implies t_1=\pm\sqrt{3}.\]</div>
+        Both \(t=\sqrt{3}\approx1.732\) and \(t=-\sqrt{3}\approx-1.732\) lie in \([-2,2]\,\checkmark\). The intersection point:
+        <div class="amath">\[x(\sqrt{3})=3\sqrt{3}-3\sqrt{3}=0,\qquad y(\sqrt{3})=3-1=2.\qquad\text{Point: }\mathbf{(0,\,2)}.\]</div>
+      </div>
+      <div class="tip">P1: algebraic derivation showing t₂ = −t₁ (from y-equality) and t₁² = 3 (from x-equality). P2: intersection point (0,2) with both t-values ±√3 stated. Simply guessing (0,2) without algebra earns 0.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (d) — Left and Downward <span class="pb">1 pt</span></div>
+      <div class="ab">Left: \(x'=3t^2-3<0\iff t^2<1\iff t\in(-1,1)\). Downward: \(y'=2t<0\iff t<0\). Both: \(\mathbf{t\in(-1,0)}\).</div>
+      <div class="tip">P1: interval (−1,0) with both inequalities justified. Endpoints excluded: at t=−1, x′=0 (not moving left); at t=0, y′=0 (not moving downward).</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (e) — Arc Length via Calculator <span class="pb">2 pts</span></div>
+      <div class="ab">Total distance \(=\displaystyle\int_0^2|\mathbf{v}(t)|\,dt\):
+        <div class="amath">\[\text{Distance}=\int_0^2\!\sqrt{[x'(t)]^2+[y'(t)]^2}\,dt=\int_0^2\!\sqrt{(3t^2-3)^2+(2t)^2}\,dt=\int_0^2\!\sqrt{9t^4-14t^2+9}\,dt.\]</div>
+        Using a graphing calculator: \(\displaystyle\int_0^2\!\sqrt{9t^4-14t^2+9}\,dt\approx\mathbf{7.616}\).
+      </div>
+      <div class="tip">P1: correct integrand √(9t⁴−14t²+9) with limits 0 to 2. Verify: (3t²−3)²=9t⁴−18t²+9 and (2t)²=4t², sum = 9t⁴−14t²+9 ✓. P2: calculator value ≈ 7.616 (accept 7.59–7.65). Setup without a calculator evaluation earns P1 only.</div>
+    </div>
+  </div>
+  <span class="stog" onclick="toggleS('s2')">▸ Practice self-scoring — Q2</span>
+  <div class="spanel" id="s2"><div class="shdr">Self-Scoring — Q2</div><div class="swrap"><textarea class="sinput" id="si2" placeholder="Write your Q2 answer here..."></textarea><button class="sbtn" onclick="scoreIt('si2','sr2',['velocity','9.849','sqrt(97)','tangent','4/9','horizontal','(0,-1)','vertical','(-2,0)','(2,0)','self-intersection','sqrt(3)','(0,2)','(-1,0)','arc length','9t^4','7.616'])">Score My Answer</button><div class="sres" id="sr2"></div></div></div>
+</div><!-- /q2 -->
+
+<!-- ═══════════ PART B ═══════════ -->
+<div class="sec-div">Section II · Part B — No Calculator Permitted</div>
+<div class="sec-sub"><strong>Questions 3–6 · 60 minutes.</strong> Graphing calculators are not permitted. You may return to Part A but may not use a calculator. Leave all answers in <strong>exact form</strong> unless otherwise specified. Justify all conclusions with complete calculus reasoning.</div>
+
+<!-- ══════ Q3 ══════ -->
+<div class="question" id="q3">
+  <div class="q-hdr">
+    <span class="q-num">3</span>
+    <span class="badge nocalc">No Calculator</span>
+    <span class="badge abbc">AB + BC</span>
+    <span class="q-type">Analysis of \(f\) from Graph of \(f'\) · FTC · Extrema · Concavity</span>
+    <div class="pts-box"><span class="n">9</span><small>pts</small></div>
+  </div>
+  <div class="ctx">
+    <div class="ctx-lbl">Problem Statement</div>
+    The graph of \(f'\), the derivative of a continuous function \(f\), is shown in Figure 3 for \(-3\le x\le5\). The graph of \(f'\) consists of <strong>three line segments</strong> connecting \((-3,3)\), \((1,-1)\), \((3,3)\), and \((5,-1)\). It is given that \(f(0)=2\).
+  </div>
+  <div class="fig">
+    <div class="fig-title">Figure 3 — Graph of \(y=f'(x)\) on \([-3,5]\)</div>
+    <!-- px=65+(x+3)*50; py=145−y*40. x=-3→65; x=0→215; x=1→265; x=3→365; x=5→465. y=3→py=25; y=-1→py=185 -->
+    <svg viewBox="0 0 520 210" style="width:100%;display:block">
+      <rect width="520" height="210" fill="#f9f9f7"/>
+      <!-- grid -->
+      <line x1="65" y1="25"  x2="465" y2="25"  stroke="#eee" stroke-width="1"/>
+      <line x1="65" y1="65"  x2="465" y2="65"  stroke="#eee" stroke-width="1"/>
+      <line x1="65" y1="105" x2="465" y2="105" stroke="#eee" stroke-width="1"/>
+      <line x1="65" y1="145" x2="465" y2="145" stroke="#eee" stroke-width="1"/>
+      <line x1="65" y1="185" x2="465" y2="185" stroke="#eee" stroke-width="1"/>
+      <line x1="65"  y1="20" x2="65"  y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="115" y1="20" x2="115" y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="165" y1="20" x2="165" y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="215" y1="20" x2="215" y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="265" y1="20" x2="265" y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="315" y1="20" x2="315" y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="365" y1="20" x2="365" y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="415" y1="20" x2="415" y2="196" stroke="#eee" stroke-width="1"/>
+      <line x1="465" y1="20" x2="465" y2="196" stroke="#eee" stroke-width="1"/>
+      <!-- axes -->
+      <line x1="63"  y1="145" x2="468" y2="145" stroke="#111" stroke-width="2"/>
+      <line x1="215" y1="18"  x2="215" y2="196" stroke="#111" stroke-width="2"/>
+      <polygon points="468,145 464,143 464,147" fill="#111"/>
+      <polygon points="215,18 213,22 217,22" fill="#111"/>
+      <!-- Three segments: (−3,3)→(1,−1)→(3,3)→(5,−1) -->
+      <line x1="65"  y1="25"  x2="265" y2="185" stroke="#002d72" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="265" y1="185" x2="365" y2="25"  stroke="#002d72" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="365" y1="25"  x2="465" y2="185" stroke="#002d72" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Endpoint dots -->
+      <circle cx="65"  cy="25"  r="4.5" fill="#002d72"/>
+      <circle cx="265" cy="185" r="4.5" fill="#002d72"/>
+      <circle cx="365" cy="25"  r="4.5" fill="#002d72"/>
+      <circle cx="465" cy="185" r="4.5" fill="#002d72"/>
+      <!-- Endpoint labels -->
+      <text x="53"  y="22"  font-size="10" fill="#333" text-anchor="end">(−3, 3)</text>
+      <text x="270" y="198" font-size="10" fill="#333">(1, −1)</text>
+      <text x="372" y="19"  font-size="10" fill="#333">(3, 3)</text>
+      <text x="472" y="195" font-size="10" fill="#333">(5, −1)</text>
+      <!-- Axis ticks -->
+      <text x="65"  y="157" text-anchor="middle" font-size="10" fill="#555">−3</text>
+      <text x="115" y="157" text-anchor="middle" font-size="10" fill="#555">−2</text>
+      <text x="165" y="157" text-anchor="middle" font-size="10" fill="#555">−1</text>
+      <text x="265" y="157" text-anchor="middle" font-size="10" fill="#555">1</text>
+      <text x="315" y="157" text-anchor="middle" font-size="10" fill="#555">2</text>
+      <text x="365" y="157" text-anchor="middle" font-size="10" fill="#555">3</text>
+      <text x="415" y="157" text-anchor="middle" font-size="10" fill="#555">4</text>
+      <text x="465" y="157" text-anchor="middle" font-size="10" fill="#555">5</text>
+      <text x="474" y="148" font-size="11" fill="#333" font-weight="bold">x</text>
+      <text x="207" y="68"  text-anchor="end" font-size="10" fill="#555">3</text>
+      <text x="207" y="108" text-anchor="end" font-size="10" fill="#555">2</text>
+      <text x="207" y="148" text-anchor="end" font-size="10" fill="#555">1</text>
+      <text x="207" y="188" text-anchor="end" font-size="10" fill="#555">−1</text>
+      <text x="220" y="16"  font-size="11" fill="#333" font-weight="bold">y</text>
+      <text x="82" y="62" font-size="11.5" fill="#002d72" font-weight="bold">y = f ′(x)</text>
+    </svg>
+    <div class="fig-cap">The graph of \(f'\) has corners (not zeros) at \(x=1\) and \(x=3\). Given: \(f(0)=2\).</div>
+  </div>
+  <div class="part"><span class="plbl">(a)</span> <span class="ppts">[3 pts]</span><br>
+    <span class="tv">Find</span> all \(x\in(-3,5)\) at which \(f\) has a <strong>relative maximum</strong> or <strong>relative minimum</strong>. For each, <span class="tv">classify</span> it and <span class="tv">justify</span> using the sign of \(f'\). Also <span class="tv">determine</span> all open intervals on which \(f\) is <strong>concave down</strong>, and <span class="tv">identify</span> all inflection points of \(f\) in \((-3,5)\) with justification.
+  </div>
+  <div class="part"><span class="plbl">(b)</span> <span class="ppts">[4 pts]</span><br>
+    Using the Fundamental Theorem of Calculus, <span class="tv">find</span> the exact values \(f(-3)\), \(f\!\left(\tfrac{3}{2}\right)\), \(f(3)\), and \(f(5)\). Show all work including the integrand, limits of integration, and antiderivative evaluation.
+  </div>
+  <div class="part"><span class="plbl">(c)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Find</span> the <strong>absolute maximum value</strong> and the <strong>absolute minimum value</strong> of \(f\) on \([-3,5]\). <span class="tv">Justify</span> by comparing all candidates.
+  </div>
+  <button class="rbtn" id="r3-btn" onclick="reveal(3)">▶ Reveal Answer &amp; Scoring Guideline — Question 3</button>
+  <div class="ans" id="a3">
+    <div class="ans-hdr">Question 3 — Model Answer &amp; Scoring Guideline <span class="tot">9 points</span></div>
+    <div class="ap">
+      <div class="aplbl">Part (a) — Extrema, Concavity, Inflection Points <span class="pb">3 pts</span></div>
+      <div class="ab">From the graph: \(f'(x)=-x\) on \((-3,1)\); \(f'(x)=2x-3\) on \((1,3)\); \(f'(x)=-2x+9\) on \((3,5)\).
+        <br><br><strong>Relative extrema (First Derivative Test):</strong>
+        <ul style="margin-top:.25rem">
+          <li>\(x=0\): \(f'(x)>0\) on \((-3,0)\), \(f'(x)<0\) on \((0,1)\). Sign: \(+\to-\). <strong>Relative maximum at \(x=0\).</strong></li>
+          <li>\(x=\tfrac{3}{2}\): \(f'(x)<0\) on \((1,\tfrac{3}{2})\), \(f'(x)>0\) on \((\tfrac{3}{2},3)\). Sign: \(-\to+\). <strong>Relative minimum at \(x=\tfrac{3}{2}\).</strong></li>
+          <li>\(x=\tfrac{9}{2}\): \(f'(x)>0\) on \((3,\tfrac{9}{2})\), \(f'(x)<0\) on \((\tfrac{9}{2},5)\). Sign: \(+\to-\). <strong>Relative maximum at \(x=\tfrac{9}{2}\).</strong></li>
+          <li>At \(x=1\) and \(x=3\): \(f'\) does not change sign (\(f'(1^\pm)=-1\) and \(f'(3^\pm)=3\)); neither is an extremum.</li>
+        </ul>
+        <br><strong>Concavity:</strong> determined by whether \(f'\) is increasing or decreasing.
+        <ul style="margin-top:.25rem">
+          <li>On \((-3,1)\): slope of \(f'\) is \(-1<0\Rightarrow f''<0\). <strong>Concave down.</strong></li>
+          <li>On \((1,3)\): slope of \(f'\) is \(2>0\Rightarrow f''>0\). Concave up.</li>
+          <li>On \((3,5)\): slope of \(f'\) is \(-2<0\Rightarrow f''<0\). <strong>Concave down.</strong></li>
+        </ul>
+        <strong>Inflection points:</strong> concavity changes at \(x=1\) (down→up) and \(x=3\) (up→down). Both are inflection points.
+      </div>
+      <div class="tip">P1: relative max at x=0 and relative min at x=3/2, both with sign-change justification. P2: relative max at x=9/2 with justification. P3: concave-down intervals (−3,1) and (3,5), inflection points x=1 and x=3, each justified by slope of f′ (i.e., sign of f′′).</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (b) — Values of f via FTC <span class="pb">4 pts</span></div>
+      <div class="ab">Use \(f(b)=f(0)+\displaystyle\int_0^b f'(x)\,dx=2+\displaystyle\int_0^b f'(x)\,dx\).
+        <br><br><strong>\(f(-3)\):</strong>
+        <div class="amath">\[f(-3)=2-\int_{-3}^0(-x)\,dx=2-\left[-\frac{x^2}{2}\right]_{-3}^0=2-\left(0+\frac{9}{2}\right)=2-\frac{9}{2}=\mathbf{-\frac{5}{2}}.\]</div>
+        <strong>\(f\!\left(\tfrac{3}{2}\right)\):</strong>
+        <div class="amath">\[f\!\left(\tfrac{3}{2}\right)=2+\int_0^1\!(-x)\,dx+\int_1^{3/2}\!(2x-3)\,dx=2+\left[-\tfrac{x^2}{2}\right]_0^1+\left[x^2-3x\right]_1^{3/2}=2-\tfrac{1}{2}+\!\left[\left(\tfrac{9}{4}-\tfrac{9}{2}\right)-(1-3)\right]\]</div>
+        <div class="amath">\[=2-\tfrac{1}{2}+\left(-\tfrac{9}{4}+2\right)=4-\tfrac{11}{4}=\mathbf{\tfrac{5}{4}}.\]</div>
+        <strong>\(f(3)\):</strong>
+        <div class="amath">\[f(3)=f\!\left(\tfrac{3}{2}\right)+\int_{3/2}^{3}\!(2x-3)\,dx=\tfrac{5}{4}+\left[x^2-3x\right]_{3/2}^3=\tfrac{5}{4}+(9-9)-\!\left(\tfrac{9}{4}-\tfrac{9}{2}\right)=\tfrac{5}{4}+\tfrac{9}{4}=\mathbf{\tfrac{7}{2}}.\]</div>
+        <strong>\(f(5)\):</strong>
+        <div class="amath">\[f(5)=f(3)+\int_3^5\!(-2x+9)\,dx=\tfrac{7}{2}+\left[-x^2+9x\right]_3^5=\tfrac{7}{2}+(-25+45)-(-9+27)=\tfrac{7}{2}+20-18=\mathbf{\tfrac{11}{2}}.\]</div>
+      </div>
+      <div class="tip">One point each for f(−3)=−5/2, f(3/2)=5/4, f(3)=7/2, f(5)=11/2. Must show FTC structure (f(b) = f(a) + ∫f′). Geometric computation (signed triangle areas) is equally valid. Allow carry-forward between subparts.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (c) — Absolute Extrema <span class="pb">2 pts</span></div>
+      <div class="ab">Compute \(f(\tfrac{9}{2})\):
+        <div class="amath">\[f\!\left(\tfrac{9}{2}\right)=f(3)+\int_3^{9/2}\!(-2x+9)\,dx=\tfrac{7}{2}+\left[-x^2+9x\right]_3^{9/2}=\tfrac{7}{2}+\!\left(-\tfrac{81}{4}+\tfrac{81}{2}\right)\!-(9-27)=\tfrac{7}{2}+\tfrac{81}{4}-18=\tfrac{23}{4}.\]</div>
+        <table class="dtbl" style="margin:.35rem 0">
+          <thead><tr><th>\(x\)</th><th>−3</th><th>0</th><th>3/2</th><th>3</th><th>9/2</th><th>5</th></tr></thead>
+          <tbody><tr><td class="rh">\(f(x)\)</td><td>−5/2</td><td>2</td><td>5/4</td><td>7/2</td><td>23/4</td><td>11/2</td></tr></tbody>
+        </table>
+        <strong>Absolute maximum:</strong> \(f(5)=\dfrac{11}{2}\) at \(x=5\).<br>
+        <strong>Absolute minimum:</strong> \(f(-3)=-\dfrac{5}{2}\) at \(x=-3\).
+      </div>
+      <div class="tip">P1: absolute max = 11/2 at x = 5, with complete candidate comparison table. P2: absolute min = −5/2 at x = −3. Selecting x=0 or x=9/2 as the absolute maximum without evaluating the endpoint x=5 earns 0 for P1.</div>
+    </div>
+  </div>
+  <span class="stog" onclick="toggleS('s3')">▸ Practice self-scoring — Q3</span>
+  <div class="spanel" id="s3"><div class="shdr">Self-Scoring — Q3</div><div class="swrap"><textarea class="sinput" id="si3" placeholder="Write your Q3 answer here..."></textarea><button class="sbtn" onclick="scoreIt('si3','sr3',['relative max','relative min','x=0','x=3/2','x=9/2','first derivative test','concave down','inflection','x=1','x=3','FTC','-5/2','5/4','7/2','23/4','11/2','absolute maximum','x=5','absolute minimum','x=-3'])">Score My Answer</button><div class="sres" id="sr3"></div></div></div>
+</div><!-- /q3 -->
+
+<div class="page-cont">Continue → Question 4</div>
+
+<!-- ══════ Q4 ══════ -->
+<div class="question" id="q4">
+  <div class="q-hdr">
+    <span class="q-num">4</span>
+    <span class="badge nocalc">No Calculator</span>
+    <span class="badge abbc">AB + BC</span>
+    <span class="q-type">Area of a Region · Volume by Washers · Cross-Sectional Solids</span>
+    <div class="pts-box"><span class="n">9</span><small>pts</small></div>
+  </div>
+  <div class="ctx">
+    <div class="ctx-lbl">Problem Statement</div>
+    Let \(R\) be the region in the first quadrant enclosed by the graphs of \(y=x^2\) and \(y=2x\), as shown in Figure 4.
+  </div>
+  <div class="two-fig">
+    <div class="fig" style="flex:1.3">
+      <div class="fig-title">Figure 4a — Region \(R\) bounded by \(y=x^2\) and \(y=2x\)</div>
+      <!-- px=40+x*72; py=240-y*28; x=0→40,x=1→112,x=2→184; y=0→240,y=4→128,y=8→16 -->
+      <svg viewBox="0 0 290 255" style="width:100%;display:block">
+        <rect width="290" height="255" fill="#f9f9f7"/>
+        <line x1="38"  y1="240" x2="266" y2="240" stroke="#111" stroke-width="2"/>
+        <line x1="40"  y1="12"  x2="40"  y2="242" stroke="#111" stroke-width="2"/>
+        <polygon points="266,240 262,238 262,242" fill="#111"/>
+        <polygon points="40,12 38,16 42,16" fill="#111"/>
+        <!-- grid -->
+        <line x1="40" y1="184" x2="266" y2="184" stroke="#eee" stroke-width="1"/>
+        <line x1="40" y1="128" x2="266" y2="128" stroke="#eee" stroke-width="1"/>
+        <line x1="40" y1="72"  x2="266" y2="72"  stroke="#eee" stroke-width="1"/>
+        <line x1="40" y1="16"  x2="266" y2="16"  stroke="#eee" stroke-width="1"/>
+        <line x1="112" y1="12" x2="112" y2="242" stroke="#eee" stroke-width="1"/>
+        <line x1="184" y1="12" x2="184" y2="242" stroke="#eee" stroke-width="1"/>
+        <line x1="256" y1="12" x2="256" y2="242" stroke="#eee" stroke-width="1"/>
+        <!-- shaded region: polygon between y=2x (upper) and y=x² (lower) for x in [0,2] -->
+        <polygon points="40,240 112,184 184,128 184,128 148,184 112,212 76,228 40,240" fill="#d0e4f7" opacity=".85"/>
+        <!-- y=x²: x=0:(40,240); x=0.5:(76,233); x=1:(112,212); x=1.5:(148,177); x=2:(184,128) -->
+        <polyline points="40,240 76,233 112,212 148,177 184,128 220,72 256,16" fill="none" stroke="#002d72" stroke-width="2.5" stroke-linejoin="round"/>
+        <!-- y=2x: x=0:(40,240); x=2:(184,128); x=3.5:(292,44) -->
+        <line x1="40" y1="240" x2="266" y2="100" stroke="#8b0000" stroke-width="2.5"/>
+        <!-- Region label -->
+        <text x="110" y="205" text-anchor="middle" font-size="16" fill="#3a6aaf" font-style="italic" font-weight="bold">R</text>
+        <!-- Curve labels -->
+        <text x="195" y="65"  font-size="11" fill="#002d72" font-style="italic">y = x²</text>
+        <text x="200" y="112" font-size="11" fill="#8b0000" font-style="italic">y = 2x</text>
+        <!-- (2,4) intersection: px=184,py=128 -->
+        <circle cx="184" cy="128" r="4.5" fill="#333"/>
+        <text x="191" y="124" font-size="10" fill="#333">(2, 4)</text>
+        <!-- Ticks -->
+        <text x="112" y="250" text-anchor="middle" font-size="10" fill="#555">1</text>
+        <text x="184" y="250" text-anchor="middle" font-size="10" fill="#555">2</text>
+        <text x="256" y="250" text-anchor="middle" font-size="10" fill="#555">3</text>
+        <text x="273" y="242" font-size="11" fill="#333" font-weight="bold">x</text>
+        <text x="32"  y="186" text-anchor="end" font-size="10" fill="#555">2</text>
+        <text x="32"  y="130" text-anchor="end" font-size="10" fill="#555">4</text>
+        <text x="32"  y="74"  text-anchor="end" font-size="10" fill="#555">6</text>
+        <text x="44"  y="10"  font-size="11" fill="#333" font-weight="bold">y</text>
+      </svg>
+      <div class="fig-cap">Intersections: \(x^2=2x\Rightarrow x=0,\,2\).</div>
+    </div>
+    <div class="fig" style="flex:1">
+      <div class="fig-title">Figure 4b — Schematic of a square cross-section at a representative \(x\)</div>
+      <svg viewBox="0 0 210 255" style="width:100%;display:block">
+        <rect width="210" height="255" fill="#f9f9f7"/>
+        <!-- Base outline — schematic representation of region R's extent -->
+        <path d="M28,228 Q105,95 182,52" fill="none" stroke="#8b0000" stroke-width="2" stroke-dasharray="5,3"/>
+        <line x1="28" y1="228" x2="182" y2="52" stroke="#002d72" stroke-width="2" stroke-dasharray="5,3"/>
+        <!-- Shaded base  -->
+        <polygon points="28,228 105,160 182,52 156,80 105,130 65,174 28,228" fill="#d0e4f7" opacity=".5"/>
+        <!-- Square cross-section at roughly x=1 -->
+        <rect x="85" y="130" width="34" height="34" fill="rgba(0,45,114,0.12)" stroke="#002d72" stroke-width="1.6" stroke-dasharray="4,2"/>
+        <!-- Side-length bracket -->
+        <line x1="122" y1="130" x2="128" y2="130" stroke="#555" stroke-width="1"/>
+        <line x1="122" y1="164" x2="128" y2="164" stroke="#555" stroke-width="1"/>
+        <line x1="125" y1="130" x2="125" y2="164" stroke="#555" stroke-width="1"/>
+        <text x="132" y="151" font-size="11" fill="#333" font-style="italic">s</text>
+        <!-- Side-length label below bracket -->
+        <text x="102" y="122" text-anchor="middle" font-size="9.5" fill="#002d72">square cross-</text>
+        <text x="102" y="132" text-anchor="middle" font-size="9.5" fill="#002d72">section ⊥ x-axis</text>
+        <!-- Boundary labels -->
+        <text x="148" y="98"  font-size="10" fill="#8b0000" font-style="italic">y = 2x</text>
+        <text x="52"  y="222" font-size="10" fill="#002d72" font-style="italic">y = x²</text>
+        <text x="105" y="248" text-anchor="middle" font-size="9.5" fill="#333">base is region R</text>
+      </svg>
+      <div class="fig-cap">For part (b): cross-sections perpendicular to the \(x\)-axis are squares; the side length \(s(x)=2x-x^2\).</div>
+    </div>
+  </div>
+  <div class="part"><span class="plbl">(a)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Find</span> the exact area of region \(R\). State the integrand and limits clearly.
+  </div>
+  <div class="part"><span class="plbl">(b)</span> <span class="ppts">[2 pts]</span><br>
+    Region \(R\) is the base of a solid. Every cross-section perpendicular to the \(x\)-axis is a <strong>square</strong> with one side in the base. <span class="tv">Find</span> the exact volume of this solid.
+  </div>
+  <div class="part"><span class="plbl">(c)</span> <span class="ppts">[3 pts]</span><br>
+    <span class="tv">Find</span> the volume of the solid generated when \(R\) is revolved about the \(x\)-axis. Use the <strong>washer method</strong>; explicitly identify the outer radius \(R(x)\) and inner radius \(r(x)\), and evaluate the integral in exact form.
+  </div>
+  <div class="part"><span class="plbl">(d)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Find</span> the volume of the solid generated when \(R\) is revolved about the line \(y=-1\). Use the washer method; explicitly identify the outer and inner radii in terms of \(x\) and evaluate.
+  </div>
+  <button class="rbtn" id="r4-btn" onclick="reveal(4)">▶ Reveal Answer &amp; Scoring Guideline — Question 4</button>
+  <div class="ans" id="a4">
+    <div class="ans-hdr">Question 4 — Model Answer &amp; Scoring Guideline <span class="tot">9 points</span></div>
+    <div class="ap">
+      <div class="aplbl">Part (a) — Area <span class="pb">2 pts</span></div>
+      <div class="ab">On \([0,2]\): \(2x\ge x^2\).
+        <div class="amath">\[A=\int_0^2(2x-x^2)\,dx=\left[x^2-\frac{x^3}{3}\right]_0^2=4-\frac{8}{3}=\mathbf{\frac{4}{3}}.\]</div>
+      </div>
+      <div class="tip">P1: integrand 2x−x² with limits 0 to 2. P2: correct antiderivative evaluation yielding 4/3.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (b) — Square Cross-Sections <span class="pb">2 pts</span></div>
+      <div class="ab">Side length \(s(x)=2x-x^2\). Cross-section area \(=[s(x)]^2=(2x-x^2)^2=4x^2-4x^3+x^4\).
+        <div class="amath">\[V=\int_0^2(4x^2-4x^3+x^4)\,dx=\left[\frac{4x^3}{3}-x^4+\frac{x^5}{5}\right]_0^2=\frac{32}{3}-16+\frac{32}{5}=\frac{160-240+96}{15}=\mathbf{\frac{16}{15}}.\]</div>
+      </div>
+      <div class="tip">P1: integrand (2x−x²)² correctly expanded as 4x²−4x³+x⁴, with limits 0 to 2. P2: correct evaluation to 16/15. Using s(x) rather than [s(x)]² as the volume element earns 0.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (c) — Revolution about \(x\)-axis (Washer Method) <span class="pb">3 pts</span></div>
+      <div class="ab">Outer radius \(R(x)=2x\) (upper boundary); inner radius \(r(x)=x^2\) (lower boundary).
+        <div class="amath">\[V=\pi\int_0^2\!\left[(2x)^2-(x^2)^2\right]\!dx=\pi\int_0^2\!(4x^2-x^4)\,dx=\pi\!\left[\frac{4x^3}{3}-\frac{x^5}{5}\right]_0^2=\pi\!\left(\frac{32}{3}-\frac{32}{5}\right)=32\pi\cdot\frac{2}{15}=\mathbf{\frac{64\pi}{15}}.\]</div>
+      </div>
+      <div class="tip">P1: washer setup π∫[R²−r²]dx with outer radius 2x and inner radius x², both named. P2: correct expansion and antiderivative. P3: exact value 64π/15. Using the disk method (one radius) earns at most P1.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (d) — Revolution about \(y=-1\) (Washer Method) <span class="pb">2 pts</span></div>
+      <div class="ab">Axis \(y=-1\) lies below region. Distances from \(y=-1\):<br>
+        Outer radius \(R(x)=2x-(-1)=2x+1\). Inner radius \(r(x)=x^2-(-1)=x^2+1\).
+        <div class="amath">\[V=\pi\int_0^2\!\left[(2x+1)^2-(x^2+1)^2\right]\!dx=\pi\int_0^2\!\left[4x^2+4x+1-x^4-2x^2-1\right]\!dx=\pi\int_0^2\!(-x^4+2x^2+4x)\,dx\]</div>
+        <div class="amath">\[=\pi\!\left[-\frac{x^5}{5}+\frac{2x^3}{3}+2x^2\right]_0^2=\pi\!\left(-\frac{32}{5}+\frac{16}{3}+8\right)=\pi\cdot\frac{-96+80+120}{15}=\mathbf{\frac{104\pi}{15}}.\]</div>
+      </div>
+      <div class="tip">P1: outer radius (2x+1) and inner radius (x²+1) both stated explicitly; setup π∫[(2x+1)²−(x²+1)²]dx. P2: correct expansion and evaluation to 104π/15. Forgetting +1 on inner radius (using r=x² instead of x²+1) earns 0 for P2.</div>
+    </div>
+  </div>
+  <span class="stog" onclick="toggleS('s4')">▸ Practice self-scoring — Q4</span>
+  <div class="spanel" id="s4"><div class="shdr">Self-Scoring — Q4</div><div class="swrap"><textarea class="sinput" id="si4" placeholder="Write your Q4 answer here..."></textarea><button class="sbtn" onclick="scoreIt('si4','sr4',['4/3','2x-x^2','(2x-x^2)^2','16/15','washer','outer','inner','2x','x^2','64pi/15','64π/15','y=-1','2x+1','x^2+1','104pi/15','104π/15'])">Score My Answer</button><div class="sres" id="sr4"></div></div></div>
+</div><!-- /q4 -->
+
+<div class="page-cont">Continue → Question 5</div>
+
+<!-- ══════ Q5 ══════ -->
+<div class="question" id="q5">
+  <div class="q-hdr">
+    <span class="q-num">5</span>
+    <span class="badge nocalc">No Calculator</span>
+    <span class="badge bc">BC Only</span>
+    <span class="q-type">Separable Differential Equations · Slope Field · Euler's Method · Concavity</span>
+    <div class="pts-box"><span class="n">9</span><small>pts</small></div>
+  </div>
+  <div class="ctx">
+    <div class="ctx-lbl">Problem Statement</div>
+    Consider the differential equation \(\dfrac{dy}{dx}=y\cos x\), where \(y>0\). A slope field for this equation is shown in Figure 5. Let \(y=f(x)\) be the particular solution satisfying \(f(0)=1\).
+  </div>
+  <div class="fig">
+    <div class="fig-title">Figure 5 — Slope field for \(\dfrac{dy}{dx}=y\cos x\), with initial point \((0,\,1)\) marked</div>
+    <!-- Axes: x in [−π/2, 3π/2], y in [0, 3.2]
+         px = 55 + (x + π/2)/(2π) * 400. x=−π/2→55; x=0→155; x=π/2→255; x=π→355; x=3π/2→455
+         py = 210 − y * 60. y=0→210; y=1→150; y=2→90; y=3→30
+         Slope at (x_i,y_j) = y_j * cos(x_i). Scale factor for SVG slope: (60/100)=0.6 (py per y-unit / px per x-unit).
+         Line half-length = 8px. For slope m_data, m_svg = m_data * 0.6.
+         dx = 8/√(1+m_svg²); dy_svg = 8*m_svg/√(1+m_svg²). Positive m_svg → going up-right (py decreases).
+         cos values: −π/2→0, 0→1, π/4→√2/2≈0.707, π/2→0, 3π/4→−0.707, π→−1, 5π/4→−0.707, 3π/2→0
+    -->
+    <svg viewBox="0 0 510 225" style="width:100%;display:block">
+      <rect width="510" height="225" fill="#f9f9f7"/>
+      <!-- light grid -->
+      <line x1="55"  y1="30"  x2="455" y2="30"  stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="55"  y1="90"  x2="455" y2="90"  stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="55"  y1="150" x2="455" y2="150" stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="55"  y1="210" x2="455" y2="210" stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="55"  y1="20"  x2="55"  y2="215" stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="155" y1="20"  x2="155" y2="215" stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="255" y1="20"  x2="255" y2="215" stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="355" y1="20"  x2="355" y2="215" stroke="#e8e8e8" stroke-width="1"/>
+      <line x1="455" y1="20"  x2="455" y2="215" stroke="#e8e8e8" stroke-width="1"/>
+      <!-- axes -->
+      <line x1="53"  y1="210" x2="458" y2="210" stroke="#111" stroke-width="2"/>
+      <line x1="155" y1="18"  x2="155" y2="213" stroke="#111" stroke-width="2"/>
+      <polygon points="458,210 454,208 454,212" fill="#111"/>
+      <polygon points="155,18 153,22 157,22" fill="#111"/>
+      <!--
+        SLOPE MARKS — columns at x = −π/2(55), 0(155), π/4(205), π/2(255), 3π/4(305), π(355), 5π/4(405), 3π/2(455)
+        y rows: 0(210), 1(150), 2(90), 3(30)
+        
+        x=−π/2: cos=0 → all horizontal (m=0)
+        x=0: cos=1 → m=y. y=1:m=1,m_svg=0.6,n=1.166,dx=6.86,dy=4.12; y=2:m=2,m_svg=1.2,n=1.562,dx=5.12,dy=6.14; y=3:m=3,m_svg=1.8,n=2.059,dx=3.88,dy=6.99
+        x=π/4: cos=0.707 → m=0.707y. y=1:m=0.707,m_svg=0.424,n=1.086,dx=7.37,dy=3.12; y=2:m=1.414,m_svg=0.848,n=1.307,dx=6.12,dy=5.19; y=3:m=2.121,m_svg=1.273,n=1.603,dx=4.99,dy=6.35
+        x=π/2: cos=0 → all horizontal
+        x=3π/4: cos=−0.707 → m=−0.707y → down-right. y=1: m_svg=−0.424; y=2: m_svg=−0.848; y=3: m_svg=−1.273
+        x=π: cos=−1 → m=−y → down-right. y=1:m_svg=−0.6; y=2:m_svg=−1.2; y=3:m_svg=−1.8
+        x=5π/4: cos=−0.707 (same magnitude as π/4) → down-right
+        x=3π/2: cos=0 → all horizontal
+        
+        For up-right (m_svg>0): (px−dx, py+dy) → (px+dx, py−dy)
+        For down-right (m_svg<0): (px−dx, py−|dy|) → (px+dx, py+|dy|)
+        For horizontal: (px−8, py) → (px+8, py)
+      -->
+      <!-- x=−π/2(55): horizontal at y=0,1,2,3 -->
+      <line x1="47"  y1="210" x2="63"  y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="47"  y1="150" x2="63"  y2="150" stroke="#666" stroke-width="1.4"/>
+      <line x1="47"  y1="90"  x2="63"  y2="90"  stroke="#666" stroke-width="1.4"/>
+      <line x1="47"  y1="30"  x2="63"  y2="30"  stroke="#666" stroke-width="1.4"/>
+      <!-- x=0(155): horizontal at y=0; up-right at y=1,2,3 -->
+      <line x1="147" y1="210" x2="163" y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="148" y1="154" x2="162" y2="146" stroke="#666" stroke-width="1.4"/>
+      <line x1="150" y1="96"  x2="160" y2="84"  stroke="#666" stroke-width="1.4"/>
+      <line x1="151" y1="37"  x2="159" y2="23"  stroke="#666" stroke-width="1.4"/>
+      <!-- x=π/4(205): horiz at y=0; up-right at y=1,2,3 -->
+      <line x1="197" y1="210" x2="213" y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="198" y1="153" x2="212" y2="147" stroke="#666" stroke-width="1.4"/>
+      <line x1="199" y1="95"  x2="211" y2="85"  stroke="#666" stroke-width="1.4"/>
+      <line x1="200" y1="36"  x2="210" y2="24"  stroke="#666" stroke-width="1.4"/>
+      <!-- x=π/2(255): all horizontal -->
+      <line x1="247" y1="210" x2="263" y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="247" y1="150" x2="263" y2="150" stroke="#666" stroke-width="1.4"/>
+      <line x1="247" y1="90"  x2="263" y2="90"  stroke="#666" stroke-width="1.4"/>
+      <line x1="247" y1="30"  x2="263" y2="30"  stroke="#666" stroke-width="1.4"/>
+      <!-- x=3π/4(305): horiz at y=0; down-right at y=1,2,3 -->
+      <line x1="297" y1="210" x2="313" y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="298" y1="147" x2="312" y2="153" stroke="#666" stroke-width="1.4"/>
+      <line x1="299" y1="85"  x2="311" y2="95"  stroke="#666" stroke-width="1.4"/>
+      <line x1="300" y1="24"  x2="310" y2="36"  stroke="#666" stroke-width="1.4"/>
+      <!-- x=π(355): horiz at y=0; down-right at y=1,2,3 -->
+      <line x1="347" y1="210" x2="363" y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="348" y1="146" x2="362" y2="154" stroke="#666" stroke-width="1.4"/>
+      <line x1="350" y1="84"  x2="360" y2="96"  stroke="#666" stroke-width="1.4"/>
+      <line x1="351" y1="23"  x2="359" y2="37"  stroke="#666" stroke-width="1.4"/>
+      <!-- x=5π/4(405): same pattern as 3π/4 -->
+      <line x1="397" y1="210" x2="413" y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="398" y1="147" x2="412" y2="153" stroke="#666" stroke-width="1.4"/>
+      <line x1="399" y1="85"  x2="411" y2="95"  stroke="#666" stroke-width="1.4"/>
+      <line x1="400" y1="24"  x2="410" y2="36"  stroke="#666" stroke-width="1.4"/>
+      <!-- x=3π/2(455): all horizontal -->
+      <line x1="447" y1="210" x2="463" y2="210" stroke="#666" stroke-width="1.4"/>
+      <line x1="447" y1="150" x2="463" y2="150" stroke="#666" stroke-width="1.4"/>
+      <line x1="447" y1="90"  x2="463" y2="90"  stroke="#666" stroke-width="1.4"/>
+      <line x1="447" y1="30"  x2="463" y2="30"  stroke="#666" stroke-width="1.4"/>
+      <!-- Initial condition (0,1): px=155, py=210−60=150 -->
+      <circle cx="155" cy="150" r="6" fill="#8b0000"/>
+      <text x="165" y="146" font-size="10.5" fill="#8b0000" font-weight="bold">(0, 1)</text>
+      <!-- Axis labels and ticks -->
+      <text x="55"  y="221" text-anchor="middle" font-size="10" fill="#555">−π/2</text>
+      <text x="155" y="221" text-anchor="middle" font-size="10" fill="#555">0</text>
+      <text x="255" y="221" text-anchor="middle" font-size="10" fill="#555">π/2</text>
+      <text x="355" y="221" text-anchor="middle" font-size="10" fill="#555">π</text>
+      <text x="455" y="221" text-anchor="middle" font-size="10" fill="#555">3π/2</text>
+      <text x="464" y="213" font-size="11" fill="#333" font-weight="bold">x</text>
+      <text x="146" y="93"  text-anchor="end" font-size="10" fill="#555">2</text>
+      <text x="146" y="153" text-anchor="end" font-size="10" fill="#555">1</text>
+      <text x="160" y="17"  font-size="11" fill="#333" font-weight="bold">y</text>
+    </svg>
+    <div class="fig-cap">Slope marks are horizontal along \(x=-\tfrac{\pi}{2},\tfrac{\pi}{2},\tfrac{3\pi}{2}\) where \(\cos x=0\). The initial point \((0,1)\) is marked.</div>
+  </div>
+  <div class="part"><span class="plbl">(a)</span> <span class="ppts">[3 pts]</span><br>
+    <span class="tv">Find</span> the particular solution \(y=f(x)\) satisfying \(f(0)=1\). Show all steps of the separation of variables, including the integration of both sides, the constant of integration, and the application of the initial condition.
+  </div>
+  <div class="part"><span class="plbl">(b)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Find</span> \(\dfrac{d^2y}{dx^2}\) in terms of \(x\) and \(y\). <span class="tv">Determine</span> whether the graph of the particular solution is concave up or concave down at \((0,1)\), and <span class="tv">determine</span> whether the tangent-line approximation to \(f\!\left(\dfrac{\pi}{4}\right)\) at \(x=0\) is an <strong>overestimate</strong> or <strong>underestimate</strong>. <span class="tv">Justify</span>.
+  </div>
+  <div class="part"><span class="plbl">(c)</span> <span class="ppts">[3 pts]</span><br>
+    Use <strong>Euler's method</strong> with two steps of equal size \(h=\dfrac{\pi}{4}\), starting at \((x_0,y_0)=(0,1)\), to <span class="tv">approximate</span> \(f\!\left(\dfrac{\pi}{2}\right)\). Show all computations for each step clearly.
+  </div>
+  <div class="part"><span class="plbl">(d)</span> <span class="ppts">[1 pt]</span><br>
+    The exact value is \(f\!\left(\dfrac{\pi}{2}\right)=e\approx 2.718\). Based on your Euler approximation and the concavity of \(f\) on \([0,\tfrac{\pi}{2}]\), <span class="tv">determine</span> whether your Euler approximation is an overestimate or an underestimate of \(e\). <span class="tv">Justify</span>.
+  </div>
+  <button class="rbtn" id="r5-btn" onclick="reveal(5)">▶ Reveal Answer &amp; Scoring Guideline — Question 5</button>
+  <div class="ans" id="a5">
+    <div class="ans-hdr">Question 5 — Model Answer &amp; Scoring Guideline <span class="tot">9 points</span></div>
+    <div class="ap">
+      <div class="aplbl">Part (a) — Separation of Variables <span class="pb">3 pts</span></div>
+      <div class="ab">Separate: \(\dfrac{dy}{y}=\cos x\,dx\) (valid since \(y>0\)).
+        <div class="amath">\[\int\frac{dy}{y}=\int\cos x\,dx\implies\ln y=\sin x+C.\]</div>
+        Exponentiate: \(y=e^{\sin x+C}=Ae^{\sin x}\) where \(A=e^C>0\).<br>
+        Apply \(f(0)=1\): \(1=Ae^{\sin0}=A\cdot1\implies A=1\).
+        <div class="amath">\[\boxed{y=f(x)=e^{\sin x}.}\]</div>
+        Verification: \(f'(x)=e^{\sin x}\cos x=f(x)\cos x\,\checkmark\); \(f(0)=e^0=1\,\checkmark\).
+      </div>
+      <div class="tip">P1: correct separation dy/y = cos x dx and integration of both sides (ln y = sin x + C). P2: general solution y = Ae^{sin x}. P3: A = 1 from IC, yielding y = e^{sin x}. Omitting C and coincidentally getting y = e^{sin x} earns P1 and P3 only.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (b) — Second Derivative and Concavity <span class="pb">2 pts</span></div>
+      <div class="ab">Differentiate \(\dfrac{dy}{dx}=y\cos x\) using the product rule:
+        <div class="amath">\[\frac{d^2y}{dx^2}=\frac{dy}{dx}\cdot\cos x+y\cdot(-\sin x)=(y\cos x)\cos x-y\sin x=y(\cos^2x-\sin x).\]</div>
+        At \((0,1)\): \(f''(0)=1\cdot(\cos^20-\sin0)=1\cdot(1-0)=1>0\). The graph is <strong>concave up</strong> at \(x=0\).
+        <br><br>Tangent line at \((0,1)\): \(f'(0)=1\cdot\cos0=1\), so \(L(x)=1+x\). Since \(f''(0)>0\), the graph is concave up near \(x=0\), meaning the tangent line lies <em>below</em> the curve. Therefore \(L\!\left(\tfrac{\pi}{4}\right)=1+\tfrac{\pi}{4}\) is an <strong>underestimate</strong> of \(f\!\left(\tfrac{\pi}{4}\right)\).
+      </div>
+      <div class="tip">P1: d²y/dx² = y(cos²x − sin x) via product rule, and f′′(0) = 1 > 0 → concave up. P2: "underestimate" with key justification: concave up ↔ tangent line lies below the curve. Must use "concave up" or f′′ > 0 as the justification; vague language earns 0.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (c) — Euler's Method <span class="pb">3 pts</span></div>
+      <div class="ab"><strong>Step 1:</strong> \(x_0=0,\ y_0=1,\ h=\tfrac{\pi}{4}\).
+        <div class="amath">\[\text{Slope: }\frac{dy}{dx}\bigg|_{(0,1)}=1\cdot\cos0=1.\qquad y_1=y_0+h\cdot1=1+\frac{\pi}{4}.\]</div>
+        <strong>Step 2:</strong> \(x_1=\tfrac{\pi}{4},\ y_1=1+\tfrac{\pi}{4}\).
+        <div class="amath">\[\text{Slope: }\frac{dy}{dx}\bigg|_{(\pi/4,\,y_1)}=y_1\cos\frac{\pi}{4}=\left(1+\frac{\pi}{4}\right)\frac{\sqrt{2}}{2}.\]</div>
+        <div class="amath">\[y_2=y_1+h\cdot\text{slope}=\left(1+\frac{\pi}{4}\right)+\frac{\pi}{4}\cdot\left(1+\frac{\pi}{4}\right)\frac{\sqrt{2}}{2}=\left(1+\frac{\pi}{4}\right)\!\left(1+\frac{\pi\sqrt{2}}{8}\right).\]</div>
+        Numerically: \(y_1\approx1.785\); slope at step 2 \(\approx1.785\times0.7071\approx1.262\); \(y_2\approx1.785+\tfrac{\pi}{4}(1.262)\approx1.785+0.990\approx\mathbf{2.775}\).
+      </div>
+      <div class="tip">P1: correct slope at step 1 = 1·cos(0) = 1; y₁ = 1+π/4. P2: correct slope at step 2 = (1+π/4)·cos(π/4) = (1+π/4)·√2/2. P3: correct y₂ = (1+π/4)(1+π√2/8) ≈ 2.775. Must show both steps explicitly for full credit.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (d) — Over or Underestimate <span class="pb">1 pt</span></div>
+      <div class="ab">The Euler approximation \(\approx2.775>e\approx2.718\), so it is an <strong>overestimate</strong>.
+        <br><br><strong>Justification:</strong> On the second interval \([\tfrac{\pi}{4},\tfrac{\pi}{2}]\), the function \(f\) is concave down — specifically, \(f''(\tfrac{\pi}{4})=e^{\sqrt{2}/2}\!\left(\tfrac{1}{2}-\tfrac{\sqrt{2}}{2}\right)<0\) since \(\tfrac{1}{2}<\tfrac{\sqrt{2}}{2}\). When \(f\) is concave down, the tangent-line (Euler) approximation lies <em>above</em> the solution curve, yielding an overestimate over that interval. The overestimate in the second step outweighs the underestimate in the first.
+      </div>
+      <div class="tip">P1: "overestimate" with a supporting argument. Acceptable justifications: (a) f′′(π/4) < 0 → concave down on second subinterval → Euler overshoots; (b) numerical comparison 2.775 > e. Both approaches earn full credit. Simply stating "2.775 > e" without any further reasoning earns P1 if the Euler value from (c) was correct.</div>
+    </div>
+  </div>
+  <span class="stog" onclick="toggleS('s5')">▸ Practice self-scoring — Q5</span>
+  <div class="spanel" id="s5"><div class="shdr">Self-Scoring — Q5</div><div class="swrap"><textarea class="sinput" id="si5" placeholder="Write your Q5 answer here..."></textarea><button class="sbtn" onclick="scoreIt('si5','sr5',['separate','ln y','sin x','e^sin','A=1','concave up','f double prime','underestimate','Euler','pi/4','1+pi/4','sqrt(2)/2','2.775','overestimate','concave down'])">Score My Answer</button><div class="sres" id="sr5"></div></div></div>
+</div><!-- /q5 -->
+
+<div class="page-cont">Continue → Question 6</div>
+
+<!-- ══════ Q6 ══════ -->
+<div class="question" id="q6">
+  <div class="q-hdr">
+    <span class="q-num">6</span>
+    <span class="badge nocalc">No Calculator</span>
+    <span class="badge bc">BC Only</span>
+    <span class="q-type">Taylor and Maclaurin Series · Ratio Test · Interval of Convergence · Series Applications</span>
+    <div class="pts-box"><span class="n">9</span><small>pts</small></div>
+  </div>
+  <div class="ctx">
+    <div class="ctx-lbl">Problem Statement</div>
+    Let \(f(x)=\ln(1+x)\). In parts (a)–(d), you will develop and apply the Maclaurin series for \(f\).
+  </div>
+  <div class="part"><span class="plbl">(a)</span> <span class="ppts">[3 pts]</span><br>
+    <span class="tv">Write</span> the first four nonzero terms and the general term of the Maclaurin series for \(f(x)=\ln(1+x)\). Show the derivation clearly — either by repeated differentiation or by manipulating a known series. Then <span class="tv">use</span> the Ratio Test to <span class="tv">find</span> the radius of convergence \(R\).
+  </div>
+  <div class="part"><span class="plbl">(b)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Write</span> the first four nonzero terms and the general term of the Maclaurin series for \(g(x)=\dfrac{\ln(1+x)}{x}\), \(x\ne0\). Then <span class="tv">use</span> the first three nonzero terms of this series to <span class="tv">approximate</span>
+    \[\int_0^{1/2}\!\frac{\ln(1+t)}{t}\,dt.\]
+    Express your answer as a single fraction.
+  </div>
+  <div class="part"><span class="plbl">(c)</span> <span class="ppts">[2 pts]</span><br>
+    <span class="tv">Determine</span> whether the Maclaurin series for \(f(x)\) converges or diverges at each endpoint \(x=1\) and \(x=-1\). For each, <span class="tv">name</span> the test used and <span class="tv">state</span> a clear conclusion.
+  </div>
+  <div class="part"><span class="plbl">(d)</span> <span class="ppts">[2 pts]</span><br>
+    Using the Maclaurin series, <span class="tv">find</span> the exact value of the convergent series
+    \[\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n\cdot 2^n}.\]
+    <span class="tv">Simplify</span> your answer completely.
+  </div>
+  <button class="rbtn" id="r6-btn" onclick="reveal(6)">▶ Reveal Answer &amp; Scoring Guideline — Question 6</button>
+  <div class="ans" id="a6">
+    <div class="ans-hdr">Question 6 — Model Answer &amp; Scoring Guideline <span class="tot">9 points</span></div>
+    <div class="ap">
+      <div class="aplbl">Part (a) — Maclaurin Series and Radius of Convergence <span class="pb">3 pts</span></div>
+      <div class="ab"><strong>Derivation via known geometric series:</strong><br>
+        Start from \(\dfrac{1}{1+x}=\displaystyle\sum_{n=0}^{\infty}(-1)^n x^n\) for \(|x|<1\). Integrate term by term from 0 to \(x\):
+        <div class="amath">\[f(x)=\ln(1+x)=\int_0^x\!\frac{dt}{1+t}=\sum_{n=0}^{\infty}(-1)^n\frac{x^{n+1}}{n+1}=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}x^n}{n}.\]</div>
+        First four terms and general term:
+        <div class="amath">\[\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\cdots+\frac{(-1)^{n+1}x^n}{n}+\cdots\]</div>
+        <strong>Radius of convergence (Ratio Test):</strong>
+        <div class="amath">\[\lim_{n\to\infty}\left|\frac{a_{n+1}}{a_n}\right|=\lim_{n\to\infty}\frac{|x|^{n+1}}{n+1}\cdot\frac{n}{|x|^n}=|x|\lim_{n\to\infty}\frac{n}{n+1}=|x|\cdot1=|x|.\]</div>
+        The Ratio Test gives convergence when \(|x|<1\), so the <strong>radius of convergence is \(R=1\)</strong>.
+      </div>
+      <div class="tip">P1: correct first four terms x − x²/2 + x³/3 − x⁴/4 (or equivalent) and general term (−1)^{n+1}x^n/n. P2: Ratio Test correctly applied, showing |a_{n+1}/a_n| → |x|. P3: R = 1 stated clearly. Derivation by repeated differentiation is also fully acceptable (f⁽ⁿ⁾(0)/n! = (−1)^{n+1}/n for n ≥ 1).</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (b) — Series for g and Approximate Integral <span class="pb">2 pts</span></div>
+      <div class="ab"><strong>Series for \(g(x)=\dfrac{\ln(1+x)}{x}\):</strong> Divide each term of the series for \(\ln(1+x)\) by \(x\):
+        <div class="amath">\[g(x)=\frac{\ln(1+x)}{x}=1-\frac{x}{2}+\frac{x^2}{3}-\frac{x^3}{4}+\cdots+\frac{(-1)^{n+1}x^{n-1}}{n}+\cdots\]</div>
+        <strong>Approximate integral</strong> using first three terms (\(1-\tfrac{t}{2}+\tfrac{t^2}{3}\)):
+        <div class="amath">\[\int_0^{1/2}\!\frac{\ln(1+t)}{t}\,dt\approx\int_0^{1/2}\!\left(1-\frac{t}{2}+\frac{t^2}{3}\right)\!dt=\left[t-\frac{t^2}{4}+\frac{t^3}{9}\right]_0^{1/2}\]</div>
+        <div class="amath">\[=\frac{1}{2}-\frac{1}{16}+\frac{1}{72}=\frac{36}{72}-\frac{4.5}{72}+\frac{1}{72}=\frac{36-4.5+1}{72}.\]</div>
+        Using exact fractions: \(\dfrac{1}{2}-\dfrac{1}{16}+\dfrac{1}{72}=\dfrac{144-18+4}{288}=\mathbf{\dfrac{130}{288}=\dfrac{65}{144}}\).
+      </div>
+      <div class="tip">P1: correct series for g(x) = 1 − x/2 + x²/3 − x³/4 + ⋯ (divide series by x, maintaining correct general term). P2: correct antiderivative and evaluation: 1/2 − 1/16 + 1/72 = 65/144 ≈ 0.451. Must show the antiderivative step.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (c) — Endpoint Convergence <span class="pb">2 pts</span></div>
+      <div class="ab"><strong>At \(x=1\):</strong> The series becomes \(\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}=1-\tfrac{1}{2}+\tfrac{1}{3}-\tfrac{1}{4}+\cdots\). This is the <strong>alternating harmonic series</strong>. By the <strong>Alternating Series Test</strong>, the terms \(1/n\) are positive, decreasing, and tend to 0, so the series <strong>converges</strong> at \(x=1\).
+        <br><br><strong>At \(x=-1\):</strong> The series becomes \(\displaystyle\sum_{n=1}^{\infty}\frac{(-1)^{n+1}(-1)^n}{n}=\sum_{n=1}^{\infty}\frac{-1}{n}=-\displaystyle\sum_{n=1}^{\infty}\frac{1}{n}\), the negative of the harmonic series. By the \(p\)-series test with \(p=1\le1\), the harmonic series <strong>diverges</strong>, so the series at \(x=-1\) also <strong>diverges</strong>.
+      </div>
+      <div class="tip">P1: x=1 converges, citing Alternating Series Test with the three conditions (alternating signs, terms decrease, terms → 0). P2: x=−1 diverges, citing p-series test (p=1) or direct comparison to harmonic series. Must name a specific test for each endpoint.</div>
+    </div>
+    <div class="ap">
+      <div class="aplbl">Part (d) — Exact Sum of the Series <span class="pb">2 pts</span></div>
+      <div class="ab">The Maclaurin series for \(\ln(1+x)\) evaluated at \(x=\tfrac{1}{2}\):
+        <div class="amath">\[\ln\!\left(1+\tfrac{1}{2}\right)=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n}\cdot\left(\frac{1}{2}\right)^n=\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n\cdot2^n}.\]</div>
+        Since \(x=\tfrac{1}{2}\in(-1,1]\) (established in part (c) to be within the interval of convergence), the series converges and equals:
+        <div class="amath">\[\sum_{n=1}^{\infty}\frac{(-1)^{n+1}}{n\cdot2^n}=\ln\!\left(\frac{3}{2}\right)=\ln 3-\ln 2.\]</div>
+      </div>
+      <div class="tip">P1: recognition that substituting x = 1/2 into the series yields the given sum; must show this substitution explicitly. P2: exact answer ln(3/2) or equivalently ln 3 − ln 2. Decimal approximations are not accepted here (exact form required in Part B).</div>
+    </div>
+  </div>
+  <span class="stog" onclick="toggleS('s6')">▸ Practice self-scoring — Q6</span>
+  <div class="spanel" id="s6"><div class="shdr">Self-Scoring — Q6</div><div class="swrap"><textarea class="sinput" id="si6" placeholder="Write your Q6 answer here..."></textarea><button class="sbtn" onclick="scoreIt('si6','sr6',['general term','ratio test','R=1','radius','x^n/n','alternating','geometric series','integrate','g(x)','1-x/2','65/144','alternating series test','p-series','harmonic','diverges','converges','x=1','x=-1','ln(3/2)','ln 3','ln 2','x=1/2'])">Score My Answer</button><div class="sres" id="sr6"></div></div></div>
+</div><!-- /q6 -->
+
+<!-- ═══════════ TOTAL SCORE ═══════════ -->
+<div class="total-bar" id="total-bar">
+  <div class="tb-num" id="total-num">0</div>
+  <div class="tb-det">
+    <div style="font-size:13px;font-weight:600;margin-bottom:.22rem">Section II Score — Questions Revealed</div>
+    <div class="tb-prog"><div class="tb-fill" id="total-fill" style="width:0%"></div></div>
+    <div style="font-size:11.5px;color:var(--ink3)" id="total-label">Reveal answers to track your score · 54 points total</div>
+  </div>
+</div>
+
+<div class="exam-footer">AP® Calculus BC 2026 Predicted FRQ · Not an official College Board document · For educational preparation only · All mathematical content verified</div>
+
+<script>
+// ── REVEAL FUNCTION ──
+var revealed = {};
+function reveal(n) {
+  var btn = document.getElementById('r'+n+'-btn');
+  var panel = document.getElementById('a'+n);
+  if (!revealed[n]) {
+    panel.classList.add('open');
+    btn.classList.add('done');
+    btn.textContent = '✓ Answer Revealed — Question ' + n;
+    revealed[n] = true;
+    updateTotal();
+  }
+}
+
+function updateTotal() {
+  var count = Object.keys(revealed).length;
+  var pct = Math.round(count / 6 * 100);
+  document.getElementById('total-num').textContent = count + '/6';
+  document.getElementById('total-fill').style.width = pct + '%';
+  document.getElementById('total-label').textContent = count + ' of 6 questions revealed · Self-score using the scoring guidelines above';
+}
+
+// ── SCORER TOGGLE ──
+function toggleS(id) {
+  var el = document.getElementById(id);
+  el.classList.toggle('open');
+}
+
+// ── SELF SCORER ──
+function scoreIt(inputId, resultId, keywords) {
+  var text = document.getElementById(inputId).value.toLowerCase();
+  var resultEl = document.getElementById(resultId);
+  if (!text.trim()) {
+    resultEl.style.display = 'block';
+    resultEl.innerHTML = '<em style="color:var(--ink4)">Please write your answer above before scoring.</em>';
+    return;
+  }
+  var hits = [], misses = [];
+  keywords.forEach(function(kw) {
+    var variants = [kw.toLowerCase(), kw.replace(/\//g,' over '), kw.replace(/\^/g,' to the ')];
+    var found = variants.some(function(v) { return text.indexOf(v) !== -1; });
+    if (found) hits.push(kw); else misses.push(kw);
+  });
+  var score = Math.round(hits.length / keywords.length * 100);
+  var fill = score;
+  var fb = score >= 80 ? 'Strong response — key mathematical ideas are present.' :
+           score >= 55 ? 'Partial response — several important elements present; review the scoring key.' :
+           score >= 30 ? 'Developing response — work through the scoring key to identify gaps.' :
+                         'Missing most key ideas — study the model answer carefully before moving on.';
+  var html = '<div style="display:flex;align-items:center;gap:.8rem;margin-bottom:.4rem">';
+  html += '<span class="snum">' + score + '%</span>';
+  html += '<span style="font-size:12px;color:var(--ink3)">keyword match</span></div>';
+  html += '<div class="sbar"><div class="sfill" style="width:' + fill + '%"></div></div>';
+  html += '<div style="font-size:11.5px;margin-bottom:.3rem"><strong>Present:</strong> ';
+  if (hits.length) html += hits.map(function(k){return '<span class="kh">'+k+'</span>';}).join(' ');
+  else html += '<span style="color:var(--ink4)">none detected</span>';
+  html += '</div><div style="font-size:11.5px;margin-bottom:.35rem"><strong>Missing:</strong> ';
+  if (misses.length) html += misses.map(function(k){return '<span class="km">'+k+'</span>';}).join(' ');
+  else html += '<span style="color:var(--green)">all keywords found ✓</span>';
+  html += '</div><div class="sfb">' + fb + '</div>';
+  resultEl.style.display = 'block';
+  resultEl.innerHTML = html;
+}
+</script>
+</div><!-- /page -->
+</body>
+</html>
